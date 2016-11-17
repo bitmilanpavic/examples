@@ -1,0 +1,92 @@
+@media screen and (max-width:767px){
+	header{
+		ul.nav{
+			li{
+				margin-bottom: 20px;
+				text-align: center;
+				margin-right: 0 !important;
+				a{
+					display: inline-block;
+
+				}
+			}
+		}
+	}
+	section.top{
+		img,.scrollDown{
+			display: none !important;
+		}
+		h1{
+			margin:200px auto !important;
+		}
+	}
+	section.counters{
+		.dib{
+			margin-bottom: 20px;
+		}
+		.col-sm-3:first-child .dib{
+			.fa{
+				left:30px;
+			}
+			#counter1{
+				margin-left: 80px;
+			}
+		}
+		h3{
+			margin-top: 10px;
+			&:after{
+				left:50%;
+				margin-left: -24px;
+			}
+		}
+	}
+	section.featured{
+		.container-fluid{
+			.col-sm-4{
+				margin-top: 0;
+			}
+		}
+	}
+	section.masonry{
+		ul.grid{
+			li{
+				width:100%;
+			}
+		}
+	}
+	section.subscribe{
+		.col-sm-6:first-child{
+			height:200px;
+		}
+		.col-sm-6:last-child{
+			height:150px;
+		}
+		.col-sm-6{
+			text-align: center;
+			padding-top:20px;
+			padding-bottom: 20px;
+			h3{
+				&:after{
+					margin-left: -24px;
+					left:50%;
+				}
+			}
+			.inputContainer{
+				position: static !important;
+				display: inline-block !important;
+				margin-top: 0px;
+				transform:translate(0%) !important;
+				input[type='email']{
+					width:160px;
+				}
+			}
+			
+		}
+	}
+	section.prices{
+		.priceContainer{
+			margin-bottom: 30px;
+		}
+	}
+
+}

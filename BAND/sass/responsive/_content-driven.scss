@@ -1,0 +1,35 @@
+@media screen and (max-width:1600px){
+	.container{
+		max-width:1170px;
+	}
+	section.top{
+		height:100%;
+		.row{
+			height:100%;
+			display: block;
+			width:auto;
+			.col-md-16{
+				display: block;
+			}
+			h1{
+				margin-top: 300px;
+				margin-bottom: 300px;
+			}
+		}
+	}
+	section.tourdates{
+		.eventsContainer{
+			left:0;
+			width:100% !important;
+			max-width:1268px !important;
+		}
+		.jspContainer,.jspContainer{
+			width:100% !important;
+			max-width:1268px !important;
+		}
+		.jspPane{
+			width:100% !important;
+			max-width: 1248px !important;
+		}
+	}
+}

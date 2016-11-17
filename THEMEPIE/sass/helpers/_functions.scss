@@ -1,0 +1,18 @@
+@function colors($property-name, $property-value:null) {
+  @if ($property-value != null) {
+    @return map-get(map-get($colors, $property-name), $property-value);
+  } @else {
+    @return map-get($colors, $property-name);
+  }
+}
+
+
+@function fonts($property-name, $property-value:null) {
+  @if ($property-value != null) {
+    @return map-get(map-get($fonts, $property-name), $property-value);
+  } @else {
+    @return map-get($fonts, $property-name);
+  }
+}
+
+

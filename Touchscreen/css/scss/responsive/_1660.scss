@@ -1,0 +1,49 @@
+@media screen and (min-width:1660px){
+
+	/**************************************
+	**********      HEADER    ************
+	***************************************/
+
+	header{
+		.header-top{
+			.display-table{
+				>div:not(:first-child){
+					text-align:left;
+				}
+					
+			}
+		}
+		h3{
+			small{
+				display: inline-block;
+				margin-left: 14px;
+			}
+		}
+		.search-container{
+			margin-left: 102px;
+			margin-right: 75px;
+		}
+		.language-container{
+			margin-left: 23px;
+		}
+		.header-bottom{
+			.main-menu{
+				li{
+					float:left;
+					display: block;
+				}
+			}
+		}
+	}
+
+	/**************************************
+	**********      HOME PAGE   ************
+	***************************************/
+	.sponsors{
+		ul{
+			li:not(:last-child){
+				margin-right: 120px;
+			}
+		}
+	}
+}

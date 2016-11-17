@@ -1,0 +1,38 @@
+@media screen and (max-width:479px){
+	.loginContainer{
+		.loginHeader{
+			display: block;
+			>div{
+				display: block;
+				text-align: center;
+			}
+			.logo{
+				margin-top: 20px;
+				margin-left: 0;
+				display: inline-block;
+			}
+		}
+		.loginBody{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}	
+	.dashContainer{
+		.dashRight{
+			padding-top:145px;
+		}
+	}
+	.dashRightTop{
+		padding-bottom: 0;
+		>div{
+			display: block;
+			width:100%;
+			text-align: center;
+			margin-bottom: 17px;
+		}
+		.searchForm input{
+			width:110px;
+		}
+	}
+	
+}

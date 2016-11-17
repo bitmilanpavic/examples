@@ -1,0 +1,48 @@
+header{
+	background:$blue-dark;
+	padding-top: 45px;
+	padding-bottom: 1px;
+	position: fixed;
+	left:0px;
+	top:0px;
+	z-index: 1;
+	width:100%;
+	.logo{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 27px;
+		color:$white;
+	}
+	.mainMenu{
+		padding-top: 10px;
+		li{
+			list-style: none;
+			a{
+				font-size: $menu-size;
+				color:$white;
+				padding:0;
+				&:hover{
+					color:$blue-lighten;
+				}
+			}
+		}
+		li:not(:last-child){
+			padding-right: 37px;
+		}
+		li:last-child{
+			a{
+				display: inline-block;
+				width:90px;
+				border-radius:20px;
+				border:1px solid #1c2f5e;
+				color:$blue-lighten;
+				text-align: center;
+				padding:9px 0px 11px 0px;
+				margin-top: -10px;
+				&:hover{
+					background:$white;
+				}
+			}
+		}
+	}
+}

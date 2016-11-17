@@ -1,0 +1,86 @@
+header{
+	position: fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	z-index:10;
+	ul.main-menu{
+		list-style: none;
+		margin:0;
+		padding:0;
+		margin-top: 74px;
+		>li{
+			float: left;
+			position: relative;
+			&.active{
+				ul{
+					opacity: 1 !important;
+				}
+			}
+			a{
+				margin-left: 18px;
+				margin-right: 16px;
+				font-family: 'Lora Bold';
+				color:$black-base;
+				position: relative;
+				@extend .layoutFix;
+				display: block;
+				max-width:140px;
+				&:hover{
+					ul{
+						opacity:1;
+					}
+				}
+				>ul{
+					transition:all 0.2s linear;
+					opacity: 0;
+					height:17px;
+					overflow: hidden;
+					margin:0;
+					padding:0;
+					width:100%;
+					position: absolute;
+					bottom:-19px;
+					left:0px;
+					list-style: none;
+					li{
+						width:7px;
+						border-right:5px solid #826b60;
+						float: left;
+						height:12px;
+					}
+					li:nth-child(4n+1){
+						height:6px;
+					}
+					li:nth-child(2n+2){
+						height:11px;
+					}
+					li:nth-child(4n+3){
+						height:17px;
+					}
+					li:last-child{
+						height:6px !important;
+					}
+				}
+			}
+		}
+		>li:first-child{
+			a{
+				margin-left: 0;
+			}
+		}
+		>li:not(:last-child){
+			&:after{
+				content:'';
+				height:6px;
+				width:6px;
+				background:#826b60;
+				border-radius:6px;
+				position: absolute;
+				top:50%;
+				right:-3px;
+				margin-top: -3px;
+			}
+		}
+	}
+}

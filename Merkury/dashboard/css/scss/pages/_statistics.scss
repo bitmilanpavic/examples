@@ -1,0 +1,50 @@
+.statisticsLeft{
+	margin-top: 22px;
+	>div{
+		margin-bottom: 30px;
+	}
+}
+	
+.statisticsLeftInner{
+	.tableModule{
+		padding-top: 34px;
+		padding-bottom: 34px;
+	}
+
+}
+a._delete,a._edit{
+	display: inline-block;
+	line-height: 33px;
+	width:33px;
+	text-align: center;
+	border-radius:100%;
+	border:1px solid #dce0e9;
+	img{
+		width:15px;
+		height:16px;
+		position: relative;
+		top:-1px;
+	}
+}
+a._edit{
+	margin-right: 10px;
+}
+// canvas{
+// 	height:auto !important;
+// }
+.totalSales{
+	.col-sm-4{
+		margin-bottom: 30px;
+		h2{
+			padding-left: 37px;
+		} 
+	}
+	.dashBox{
+		padding-bottom: 40px;
+	}
+	.tableModule{
+		padding-bottom: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

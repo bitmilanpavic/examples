@@ -1,0 +1,75 @@
+<% include ../../views/includes/header %>
+
+
+	<div class="col-md-4">
+		
+			<% include ../../views/includes/sidebar %>
+		
+		
+	</div>
+	<div class="col-md-8">
+		
+			<h1 class='text-center'>Sign Up</h1>
+			<form action="/users/register" method="POST">
+				<div class="form-group">
+			    	<label for="type">Register As:</label>
+			    	<select name="type" class="form-control">
+			    		<option value="student">Student</option>
+			    		<option value="instructor">Instructor</option>
+			    	</select>
+			  	</div>
+				<div class="form-group">
+			    	<label for="text">Name:</label>
+			    	<input type="text" class="form-control" name="name">
+			    	<%if(typeof errors!='undefined' && errors){ %>
+						<% errors.forEach(function(error){if(error.param=='name'){ %>
+							<span class='alert alert-warning show'><%= error.msg %></span>
+						<% }})%>	
+					<%}%>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="text">Last Name:</label>
+			    	<input type="text" class="form-control" name="lastname">
+			    	<%if(typeof errors!='undefined' && errors){ %>
+						<% errors.forEach(function(error){if(error.param=='lastname'){ %>
+							<span class='alert alert-warning show'><%= error.msg %></span>
+						<% }})%>	
+					<%}%>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="text">Email:</label>
+			    	<input type="text" class="form-control" name="email2">
+			    	<%if(typeof errors!='undefined' && errors){ %>
+						<% errors.forEach(function(error){if(error.param=='email2'){ %>
+							<span class='alert alert-warning show'><%= error.msg %></span>
+						<% }})%>	
+					<%}%>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="text">Password:</label>
+			    	<input type="password" class="form-control" name="password2">
+			    	<%if(typeof errors!='undefined' && errors){ %>
+						<% errors.forEach(function(error){if(error.param=='password2'){ %>
+							<span class='alert alert-warning show'><%= error.msg %></span>
+						<% }})%>	
+					<%}%>
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="text">Password Repeat:</label>
+			    	<input type="password" class="form-control" name="password2rpt">
+			    	<%if(typeof errors!='undefined' && errors){ %>
+						<% errors.forEach(function(error){if(error.param=='password2rpt'){ %>
+							<span class='alert alert-warning show'><%= error.msg %></span>
+						<% }})%>	
+					<%}%>
+			  	</div>
+			  	<input type="submit" class='btn btn-default' value='Sign Up'>
+			  	<% if(typeof userExists != 'undefined' && userExists){ %>
+					<span class='alert alert-danger show'>User whit that email alredy exists</span>
+				<%}%>
+			</form>
+		
+	</div>
+
+
+<% include ../../views/includes/footer %>

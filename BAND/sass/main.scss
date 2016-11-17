@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Lora Bold';
+  src: url("../../fonts/lora/Lora-Bold.ttf");
+  src: url("../../fonts/lora/Lora-Bold.ttf?#iefix") format("embedded-opentype"), url("../../fonts/lora/Lora-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Lora Regular';
+  src: url("../../fonts/lora/Lora-Regular.ttf");
+  src: url("../../fonts/lora/Lora-Regular.ttf?#iefix") format("embedded-opentype"), url("../../fonts/lora/Lora-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Lora Italic';
+  src: url("../../fonts/lora/Lora-Italic.ttf");
+  src: url("../../fonts/lora/Lora-Italic.ttf?#iefix") format("embedded-opentype"), url("../../fonts/lora/Lora-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url("../../fonts/oswald/Oswald-Bold.ttf");
+  src: url("../../fonts/oswald/Oswald-Bold.ttf?#iefix") format("embedded-opentype"), url("../../fonts/oswald/Oswald-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Oswald Regular';
+  src: url("../../fonts/oswald/Oswald-Regular.ttf");
+  src: url("../../fonts/oswald/Oswald-Regular.ttf?#iefix") format("embedded-opentype"), url("../../fonts/oswald/Oswald-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Oswald Light';
+  src: url("../../fonts/oswald/Oswald-Light.ttf");
+  src: url("../../fonts/oswald/Oswald-Light.ttf?#iefix") format("embedded-opentype"), url("../../fonts/oswald/Oswald-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+$black-base:#241c18;
+$white-base:#e4dddb;
+$brown:#826b60;
+
+//section ourband
+$white-ourband-base:#f1eeed;
+
+.black-base{
+	color:$black-base;
+}
+body {
+  font-family: 'Lora Regular';
+  font-size: 18px;
+  color:$black-base;
+}
+
+h1, h2, h3, h4, p {
+  word-wrap: break-word; 
+}
+h1{
+	font-size: 100px;
+	line-height: 100px;
+	font-family: 'Oswald Bold';
+	color:$white-base;
+	max-width:800px;
+	>span{
+		display: block;
+	}
+}
+h2{
+	font-size: 36px;
+	font-family: 'Oswald Regular';
+}
+h3{
+	font-size: 30px;
+	font-family: 'Oswald Light';
+	small{
+		display: block;
+		font-size: 18px;
+		font-family: 'Lora Regular';
+		color:#826b60;
+		margin-top: 19px;
+	}
+}
+p{
+	line-height: 36px;
+}
+
+a{
+	transition:all 0.2s linear;
+	&:hover,&:focus{
+		text-decoration: none;
+		outline:none;
+	}
+}
+
+.floatNone{
+	float: none;
+}
+.layoutFix{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.dInlineBlock{
+	display: inline-block;
+}
+.dBlock{
+	display: block;
+}
+.dInline{
+	display: inline;
+}
+.fontRobotoThin{
+	font-family: 'Roboto Thin';
+}
+.contentContainer{
+	span{
+		display: block;
+	}
+}
+.button{
+	ouline:none;
+	border:none;
+	text-align: center;
+	line-height: 36px;
+	font-size: 18px;
+	font-family: 'Oswald Regular';
+	color:#826b60;
+	display: block;
+	width:80px;
+	overflow: hidden;
+	white-space: nowrap;
+	&.listen{
+		background:$white-base;
+		&:focus{
+			color:#826b60;
+		}
+		&:hover{
+			background:darken($white-base,10%);
+			color:#826b60;
+		}
+	}
+	&.buy{
+		background:#826b60;
+		color:white;
+		&:focus,&:hover{
+			color:white;	
+		}
+	}
+}
+.overlay{
+	width:100%;
+	height:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(0,0,0,.8);
+	text-align: center;
+	z-index:100;
+	display: table;
+	.overlayContent{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	h2{
+		color:white;
+		// font-family: 'Oswald Bold';
+	}
+	h2:first-child{
+		margin-top: 0;
+	}
+	h2:last-child{
+		margin-bottom: 0;
+	}
+}
+
+@import 'components/_index.scss';
+@import 'sections/_index.scss';
+@import 'responsive/_index.scss';

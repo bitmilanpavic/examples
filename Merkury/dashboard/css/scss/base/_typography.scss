@@ -1,0 +1,41 @@
+a{
+	transition:all 0.2s linear;
+	text-decoration: none;
+	&:focus,&:hover,&:active{
+		text-decoration: none;
+		img{
+			outline:none;
+		}
+	}
+	img{
+		outline:none;
+	}	
+}
+img{
+	outline:none;
+}
+h1{
+	font-weight: 500;
+	font-size: 33px;
+	line-height: 33px;
+	color:$blue-dark;
+}
+h2{
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 25px;
+	color:$blue-light;
+	small{
+		display: block;
+		font-weight: 400;
+		font-size: 14px;
+		color:$blue-light;
+		margin-top: 3px;
+	}
+}
+h3{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color:$blue-dark;
+}

@@ -1,0 +1,90 @@
+section.team{
+	background:$white-dark2;
+	padding-bottom: 55px;
+	.imgContainer{
+		line-height: 365px;
+		text-align: center;
+		position: relative;
+		&:after{
+			content:'';
+			background:#243130;
+			position: absolute;
+			top:23%;
+			left:0px;
+			right:0px;
+			bottom:0px;
+			z-index:-1;
+		}
+		img{
+			display: inline-block;
+			max-height: 365px;
+		}
+	}
+	.infoContainer{
+		line-height: 61px;
+		height:61px;
+		background:$white;
+		.dInlineBlock{
+			display: none;
+			i:not(:last-child){
+				margin-right: 12px;
+			}
+			i{
+				cursor: pointer;
+				color:$gray-darker;
+				font-size: 18px;
+				&:hover{
+					color:$blue-base;
+				}
+			}
+		}
+		h4{
+			margin:0;
+			padding-top: 14px;
+			color:$blue-base;
+			small{
+				color:$gray-darker;
+			}
+		}
+	}
+	.slickSlider{
+		margin-top: 90px;
+		>i{
+			position: absolute;
+			top:50%;
+			color:#555b61;
+			font-size: 26px;
+			cursor:pointer;
+			color:#555b61;
+			&:hover{
+				color:$blue-base;
+			}
+		}
+		>i:first-child{
+			left:-29px;
+		}
+		>i:last-child{
+			right:-29px;
+		}
+	}
+	.slick-slide{
+		padding-left: 15px;
+		padding-right: 15px;
+		cursor:pointer;
+		&:hover{
+			.imgContainer{
+				&:after{
+					background:$blue-base;
+				}
+			}
+			.infoContainer{
+				.dInlineBlock{
+					display: block;
+				}
+				h4{
+					display: none;
+				}
+			}
+		}
+	}
+}

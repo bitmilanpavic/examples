@@ -1,0 +1,17 @@
+@media screen and (max-width:1199px){
+	.middleBanner{
+		.browser{
+			text-align: center;
+			background-image: none;
+			.listCorrect{
+				li{
+					&:before{
+						position: static;
+						display: inline-block;
+						padding-top: 2px;
+					}	
+				}
+			}
+		}
+	}
+}

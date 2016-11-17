@@ -1,0 +1,169 @@
+footer{
+	background:url(../../img/footerBg.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 141px;
+	padding-bottom: 70px;
+	.mainContentContainer{
+		max-width:775px;
+		margin:0px auto;
+	}
+	.copy{
+		color:white;
+		font-family: 'Lora Bold';
+		text-transform: uppercase;
+		padding-left: 13px;
+		@extend .layoutFix;
+		display: inline-block;
+		max-width: 500px;
+	}
+	form{
+			display: inline !important;
+		}
+	h1{
+		color:#241c18;
+		margin-bottom: 0;
+		font-size: 80px;
+		letter-spacing: 0.050em;
+		&.smaller{
+			margin-top: -8px !important;
+			color:white;
+			font-size: 72px;
+			margin-top: 0;
+			background:url(../../img/dotsPattern.jpg) repeat-x;
+			background-position:left bottom; 
+			padding-bottom: 22px;
+			margin-bottom: 43px !important;
+		}
+	}
+	.formContainer{
+		position: relative;
+		left:-25px;
+		max-width:530px;
+		position: relative;
+		border:6px solid #241c18;
+		line-height: 54-14px;
+		overflow: hidden;
+		display: inline-table;
+		>div{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.buttonContainer{
+			max-width:231px;
+		}
+		input{
+			background:transparent;
+			outline:none;
+			border:none;
+			width:100%;
+			max-width:293px;
+			padding-left: 15px;
+		}
+		button{
+			float: left;
+			vertical-align: middle;
+			font-size:36px;
+			font-family: 'Oswald Bold';
+			color:white;
+			padding:0 33px;
+			padding-left: 24px;
+			line-height: 42px;
+			background: #241c18;
+			outline:none;
+			border:none;
+			overflow: hidden;
+			white-space: nowrap;
+			max-width: 223px;
+			@extend .layoutFix;
+		}
+	}
+	.socialContainer{
+		vertical-align: top;
+		display: inline-block;
+		position: relative;
+		left:30px;
+		top:-5px;
+		a:last-child{
+			margin-left: 30px;
+		}
+	}
+	.row:last-child{
+		margin-top: 391px;
+	}
+	.footer-menu{
+		list-style: none;
+		margin:0;
+		padding:0;
+		float: right;
+		padding-right: 8px;
+		>li{
+			float: left;
+			position: relative;
+			&.active{
+				ul{
+					opacity: 1 !important;
+				}
+			}
+			>a{
+				margin-right: 13px;
+				margin-left: 12px;
+				color:white;
+				font-size: 18px;
+				font-family: 'Lora Bold';
+				@extend .layoutFix;
+				display: block;
+				max-width:140px;
+				&:hover{
+					ul{
+						opacity:1;
+					}
+				}
+				>ul{
+					transition:all 0.2s linear;
+					opacity: 0;
+					height:17px;
+					overflow: hidden;
+					margin:0;
+					padding:0;
+					width:100%;
+					position: absolute;
+					bottom:-19px;
+					left:0px;
+					list-style: none;
+					margin-left: 13px;
+					li{
+						width:7px;
+						border-right:5px solid #826b60;
+						float: left;
+						height:12px;
+					}
+					li:nth-child(4n+1){
+						height:6px;
+					}
+					li:nth-child(2n+2){
+						height:11px;
+					}
+					li:nth-child(4n+3){
+						height:17px;
+					}
+					li:last-child{
+						height:6px !important;
+					}
+				}
+			}
+		}
+		>li:not(:last-child){
+			&:after{
+				 content: '';
+			     height: 6px;
+			     width: 6px;
+			     background: #826b60;
+			     border-radius: 6px;
+			     position: absolute;
+			     top: 50%;
+			     right: -3px;
+			     margin-top: -3px; 
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.page-name{
+	display:block;
+	padding-bottom: 60px;
+	padding-top: 51px;
+	>div{
+		display:block;
+		float:none;
+		width:100%;
+		text-align:center;
+		h1{
+			margin:0;
+			margin-top: -5px;
+		}
+	}
+	>div:last-child{
+	  margin-top:30px;
+	}
+}

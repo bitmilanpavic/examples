@@ -1,0 +1,77 @@
+@media screen and (min-width:768px){
+	
+}
+
+@media screen and (max-width:767px){
+	.loginContainer{
+		.loginHeader{
+			.logo{
+				margin-left: 15px;
+			}
+			ul{
+				li{
+					a{
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+				}
+			}
+		}
+	}
+	.dashContainer{
+		.dashRight{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.dashRightTop{
+		.searchForm input{
+			width:53px;
+		}
+		.topActions{
+			>li:not(:last-child){
+				margin-right: 15px !important;
+			}
+		}
+		.menuIcon{
+			margin-right: 7px;
+			margin-left: 0px;
+		}
+	}
+	/*HOME*/
+	.dashYourSales{
+		margin-bottom: 30px;
+		min-width:auto ;
+		.tableModule{
+			>div:first-child{
+				text-align: right;
+			}
+			>div:last-child{
+				text-align: left;
+			}
+		}
+	}
+	.homeCharts{
+		display: block;
+		>div{
+			display: block;
+		}
+	}
+	/*STATISTICS*/
+	.totalSales{
+		.col-sm-4{
+			h2{
+				padding-left: 0px;
+				text-align: center;
+				display: block !important;
+			} 
+		}
+	}
+	// USERS
+	.tableContainer{
+		overflow-x: scroll;
+		table{
+			width:767px !important;
+		}
+	}
+}

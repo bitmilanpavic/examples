@@ -1,0 +1,33 @@
+@media screen and (min-width:480px){
+	h1{
+		font-size:60px;
+		line-height: 70px;
+	}
+	header{
+		h3{
+			font-size: 53.19px;
+			margin-left: 25px;
+		}
+		.header-bottom{
+			.mobile-search-phone{
+				display: inline-block;
+			}
+		}
+	}
+	.page-name{
+		display: table;
+		width:100%;
+		>div{
+			float:none;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: left;
+		}
+		>div:last-child{
+	  		margin-top:0px;
+		}
+	}
+	.button{
+		font-size:24px;
+	}
+}

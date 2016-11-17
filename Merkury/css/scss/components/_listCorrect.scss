@@ -1,0 +1,38 @@
+.listCorrect{
+	color:$blue-lighten;
+	font-size: 22-(22*0.2px);
+	padding-left: 0;
+	list-style: none;
+	padding:3px;
+	li{
+		margin-bottom: 20px;
+		padding-left: 30px;
+		position: relative;
+		&:before{
+			content:'';
+			background-image:url(../img/correct.png);
+			background-size: 100% 100%; 
+			width:20px;
+			height:20px;
+			position: absolute;
+			left:0px;
+			top:2px;
+		}
+	}
+	li.notCorrect{
+		&:before{
+			background-image:url(../img/notCorrect.png) !important;
+		}
+	}
+	&.listPricing{
+		font-size: 18-(18*0.2px);
+		color:$blue-light;
+		padding:0px 22px;
+		li{
+			margin-bottom: 8px;
+			&:before{
+				top:0px;
+			}
+		}
+	}
+}

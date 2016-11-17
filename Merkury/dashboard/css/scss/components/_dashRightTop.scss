@@ -1,0 +1,117 @@
+.dashRightTop{
+	background:white;
+	display: table;
+	width:100%;
+	border-bottom:1px solid #d7dce5;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	>div{
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+	}
+	.searchForm{
+		display: none;
+		input{
+			padding:0px 0px 0px 5px;
+			outline:none !important;
+			border:none;
+			border-bottom: 1px solid $blue-dark;
+			font-size: 14px;
+			&::placeholder{
+				color:$blue-dark;
+				font-family: 'Roboto';
+				font-size: 14px;
+			}
+		}
+		button{
+			background:none;
+			border:none;
+		}
+	}
+	.menuIcon{
+		margin-right: 10px;
+		margin-left: 13px;
+	}
+	.searchIcon{
+		margin-left: 10px;
+	}
+	.topActions{
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+		display: inline-block;
+		.button{
+			font-size: 12px;
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+		ul{
+			list-style: none;
+		}
+		>li{
+			display: inline-block;
+			vertical-align: middle;
+			>ul{
+				display: none;
+				padding-left: 0;
+				
+			}
+		}
+		>li:not(:last-child){
+			margin-right: 21px;
+		}
+		li._addProject{
+			margin-right: 38px;
+			ul{
+				padding:10px 30px; 	
+			}
+			form{
+				display: none;
+			}	
+		}
+		li._messages{
+
+		}
+		li._alerts{
+			>a{
+				position: relative;
+				>span{
+					background:$blue-lighten;
+					color:white;
+					text-align: center;
+					display: block;
+					position: absolute;
+					top:0px;
+					right:-7px;
+					border-radius:100%;
+					font-weight: 500;
+					font-size: 7px;
+					line-height: 14px;
+					width:14px;
+					padding-top: 0px;
+				}
+			}
+		}
+		li._userSettings{
+			padding-left: 5px;
+			.userImageContainer{
+				display: inline-block;
+				width:100%;
+				max-width: 37px;
+				line-height: 37px;
+				img{
+					width:100%;
+				}
+			}
+			i{
+				color:#0e1a35;
+				margin-left: 5px;
+			}
+		}
+	}
+}

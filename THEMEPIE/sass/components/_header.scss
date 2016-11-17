@@ -1,0 +1,93 @@
+header{
+	background:$white;
+	width:100%;
+	position: fixed;
+	z-index:100;
+	top:0px;
+	left:0px;
+	height:100px;
+	line-height: 100px;
+	.logo{
+		img{
+			max-width: 106px;
+			mah-height:148px;
+		}
+	}
+	.container-fluid,.navbar-collapse{
+		padding:0;
+	}
+	ul.nav{
+		padding-left: 0;
+		margin:0;
+		li{
+			display: inline-block;
+			
+			margin-right: 27px;
+			padding:0;
+			
+			// LS 50
+			a{
+				border-bottom:4px solid transparent;
+				line-height: 92px;
+				display: inline-block;
+				padding:0;
+				font-size: 15px;
+				color:$black-lighter;
+				font-family: 'Open Sans';
+				font-weight: 600;
+				@extend .layoutFix;
+				max-width:150px;
+				top: 4px;
+				position: relative;
+				&:focus{
+					color:$black-lighter;
+					background:none;
+				}
+				&:hover{
+					color:$blue-base;
+					background:white;
+					border-bottom:4px solid $blue-lighter;
+				}
+			}
+		}
+		li.active{
+			
+			a{color:$blue-base;border-bottom:4px solid $blue-lighter;}
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+	}
+	.iconsContainer{
+		float: right;
+		display: inline-block;
+		a{
+			width:38px;
+			height:38px;
+			border-radius:100%;
+			font-size: 15px;
+			color:white;
+			text-align: center;
+			line-height: 38px;
+		}
+		a:first-child{
+			background:$black-lighter;
+			margin-right: 8px;
+		}
+		a:last-child{
+			background:$blue-base;
+		}
+	}
+	.navbar-collapse{
+		border:none;
+	}
+	.navbar-header{
+		display: inline-block;
+		position: absolute;
+		top:26px;
+		right:0px;
+	}
+	.navbar-toggle .icon-bar{
+		background:$blue-base;
+	}	
+}

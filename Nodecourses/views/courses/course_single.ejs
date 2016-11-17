@@ -1,0 +1,55 @@
+<% include ../../views/includes/header %>
+
+<div class="col-md-4">
+	<% include ../../views/includes/sidebar %>
+</div>
+<div class="col-md-8">
+
+	<% if(courses){  %>
+		<h2><%= courses.course_title %></h2>
+		<span>By: <%= courses.course_instructor_name %><%= courses.course_instructor_lastname %></span>,
+		<span>Date: <%- moment(courses.course_date).format("D/M/YYYY") %>,</span>
+		<span>Category: <%= courses.course_categories%></span>
+		<div style='padding: 20px 0px;'>
+			<%= courses.course_body %>
+		</div>
+		<span class='btn btn-info'>Price: $<%= courses.course_price %></span>
+		<div style="padding:20px 0px;">
+		<h4>Lessons</h4>
+		<% if(courses.course_lessons){ courses.course_lessons.forEach(function(lesson){ %>
+			<div style='padding:10px 0px;'>
+				<span><%= lesson.lesson_title %></span>
+				<span><%= lesson.lesson_length %></span>
+				<% if(instructorEdit || studentWatch){ %>
+					<span class='btn btn-info'><%= lesson.lesson_video_link %></span>
+				<%}%>
+			</div>
+		<% })} %>
+		</div>
+		
+	<%	} %>
+
+	<% if(instructorEdit){ %>
+		<h2>Add Lesson</h2>
+		<form action="/courses/<%=courses._id%>/addlesson" method="POST">
+			<div class="form-group">
+				<label for="">Lesson Title</label>
+				<input type="text" name='title' class='form-control'>
+			</div>
+			<div class="form-group">
+				<label for="">Lesson Length</label>
+				<input type="text" name='length' class='form-control'>
+			</div>
+			<button type='submit' class='btn btn-default'>Add Lesson</button>
+		</form>	
+	<% } %>
+
+	<% if(user.type!='instructor' && (!studentWatch || !user)){ %>
+		<form action="/courses/registerforcourse" method="POST">
+			<input type="hidden" value='<%= courses._id %>' name='courseid'>
+			<button type='submit' class='btn btn-default'>Register for this course</button>
+		</form>
+	<% } %>
+</div>
+
+<% include ../../views/includes/footer %>

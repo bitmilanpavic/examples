@@ -1,0 +1,27 @@
+@media screen and (max-width:479px){
+	section.top{
+		h1{
+			font-size: 40px;
+			line-height: 50px;
+		}
+		.dInlineBlock{
+			a:first-child{
+				margin-top: 40px;
+				margin-right: 0 !important;
+			}
+			a{
+				display: block;
+				float:none;
+			}
+		}
+		.carousel-indicators{
+			bottom:-64px !important;
+		}
+	}
+
+	section.offer{
+		.col-md-4{
+			width:100%;
+		}
+	}
+}

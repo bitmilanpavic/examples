@@ -1,0 +1,44 @@
+{
+  "recipes":[
+    {
+      "id":1,
+      "name":"Schnitzel",
+      "description":"Recipe description",
+      "imagePath":"https://dummyimage.com/100x100/000/fff",
+      "ingredients":[
+        {
+          "name":"France Frize",
+          "amount":2
+        },
+        {
+          "name":"Pork",
+          "amount":1
+        }
+      ]
+    },
+    {
+      "id":2,
+      "name":"Schnitzel 2",
+      "description":"Recipe description",
+      "imagePath":"https://dummyimage.com/100x100/000/fff",
+      "ingredients":[
+        {
+          "name":"Pork",
+          "amount":1
+        }
+      ]
+    },
+    {
+      "id":3,
+      "name":"Schnitzel 3",
+      "description":"Recipe description",
+      "imagePath":"https://dummyimage.com/110x110/000/fff",
+      "ingredients":[
+        {
+          "name":"Pork",
+          "amount":1
+        }
+      ]
+    }
+  ]
+}

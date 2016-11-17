@@ -1,0 +1,119 @@
+@media screen and (max-width:991px){
+	header{
+		ul.nav{
+			padding-right: 0 !important;
+			li{
+				margin-right: 15px !important;
+			}
+			li:last-child{
+				margin-right: 0 !important;
+			}
+		}
+	}
+	section.about{
+		.col-md-6{
+			text-align: center;
+			>div{
+				padding-left: 0;
+				p{
+					padding-right: 0;
+				}
+			}
+			>img{
+				padding:0;
+				display: inline-block;
+				margin-top: 30px;
+				max-height:none;
+				max-width:100%;
+			}
+			h2{
+				max-width:none;
+				&:after{
+					left:50%;
+					margin-left: -23px;
+				}
+			}
+		}
+	}
+	section.whatwedo{
+		.col-md-6:nth-child(2n+1){
+			.action{
+				margin-left: 0px;
+			}
+		}
+		.col-md-6:nth-child(2n+2){
+			.action{
+				margin-right: 0px;
+			}
+		}
+		.action{
+			p{
+				max-width:530px;
+			}
+		}
+	}
+	section.steps{
+		.stepsContainer{
+			.col-md-4{
+				padding-left: 15px !important;
+				padding-right: 15px !important;
+				&:after,&:before{
+					display: none !important;
+				}
+			}
+		}
+	}
+	section.services{
+		.col-md-6{
+			text-align: center;
+			height:auto;
+			margin-bottom: 40px;
+			div.dib{
+				position:static !important;
+				transform:translate(0%) !important;	
+			}
+			img{
+				display: inline-block;
+				float:none !important;
+			}
+			h3{
+				&:after{
+					left:50%;
+					margin-left: -24px;
+				}
+			}
+		}
+	}
+	section.subscribe{
+		.col-sm-6:first-child{
+			height:306px;
+			padding-left: 15px;
+		}
+		.col-sm-6:last-child{
+			padding-left: 15px;
+			height:306px;
+		}
+		.inputContainer{
+			input[type='email']{
+					width:190px;
+			}
+		}
+	}
+	section.crew{
+		.imgContainer{
+			max-width:400px;
+			max-height: 250px;
+			margin-left:auto;
+			margin-right: auto;
+		}
+	} 
+	section.contact{
+		.contactInfo{
+			ul{
+				padding:0;
+			}
+		}
+	}
+	
+
+}

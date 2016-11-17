@@ -1,0 +1,100 @@
+@media screen and (max-width:991px){
+	section.ourband{
+		padding-top: 15px;
+		padding-bottom: 100px;
+		.carousel-indicators{
+			display: none;
+		}
+		.item{
+			h2{
+				margin-bottom: 55px;
+				margin-top: 10px;
+			}
+			.row h1{
+				position: static !important;
+				font-size: 62px;
+				line-height: 62px;
+			}
+		}
+	}
+	section.playlist{
+		.row:first-child{
+			display: block;
+			margin-left: 0;
+			.controlsContainer{
+				position: static;
+			}
+			.timelineContainer{
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+			.col-md-8:first-child{
+				display: block;
+				text-align: center;
+				padding-left: 15px;
+				padding-right: 15px;
+				img{
+					display: inline-block;
+				}
+			}
+			.col-md-8:last-child{
+				display: block;
+				text-align: center;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		.row:last-child{
+			.col-md-8:first-child{
+				text-align: center;
+			}
+			h3.authorName{
+				text-align: center;
+				margin-left: 0;
+			}
+			ul.Discography{
+				display: inline-table;
+			}
+			ul.tracks{
+				margin-left: 0;
+				li{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+	section.tourdates{
+		.eventsContainerTop{
+			.slide{
+				.contentContainer{
+					right:260px;
+					span{
+						font-size: 9px;
+						line-height: 9px;
+					}
+				}
+			}
+		}	
+	}  
+	footer{
+		text-align: center;
+		padding-bottom: 20px;
+		.row:last-child{
+			margin-top: 200px;
+		}
+		ul.footer-menu{
+			float:none;
+			margin-top: 10px;
+			text-align: center;
+			display: inline-block;
+			li{
+				float:none;
+				display: inline-block;
+				margin-bottom: 25px;
+			}
+		}
+		span.copy{
+			font-size: 16px;
+		}
+	}
+}

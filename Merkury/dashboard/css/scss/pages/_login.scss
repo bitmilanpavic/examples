@@ -1,0 +1,134 @@
+.loginContainer{
+	background:url(../img/loginBackground.jpg);
+	background-size: cover;
+	background-position: center center;
+	min-height: 100vh; 	
+	.loginHeader{
+		display: table;
+		width:100%;
+		background:#0e1a35; 
+		>div{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.logo{
+			margin-left: 30px;
+			img,span{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			span{
+				font-size: 23px;
+				color:white;
+			}
+			img{
+				margin-right: 10px;
+			}
+		}
+		ul{
+			padding: 0;
+			margin:0;
+			display: inline-block;
+			margin-bottom: -5px;
+			li{
+				float: left;
+				list-style: none;
+				&.active{
+					a{
+						border-color:#5584ff;
+					}
+				}
+				a{
+					margin-left: 2px;
+					font-weight: 500;
+					display: block;
+					padding-left: 38px;
+					padding-right: 38px;
+					font-size: 16px;
+					line-height: 16px;
+					color:white;
+					padding-top: 35px;
+					padding-bottom: 35px;
+					border-bottom:6px solid transparent;
+					&:hover{
+						border-color:#5584ff;
+					}
+				}
+			}
+		}
+	}
+	.loginBody{
+		padding-top: 60px;
+		padding-bottom: 70px;
+		background:white;
+		text-align: center;
+		h2{
+			color:#8492af;
+			font-weight: 200;
+			font-size: 32px;
+			line-height: 32px;
+			margin:0;
+			padding:0;
+			span{
+				color:#5384ff;
+			}
+		}
+		form{
+			display: block;
+			width:100%;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 70px;
+		}
+		
+		input{
+			width:100%;
+			outline:none;
+			border:none;
+			border-bottom:1px solid #e4e7ee;
+			color:#8492af;
+			font-size: 16px;
+			font-weight: 300;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			margin-bottom: 20px;
+			padding-left: 45px;
+			&::placeholder{
+				color:#8492af;
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+		input.username{
+			background:url(../img/username.png) center left 3px no-repeat;
+			background-size:18px 20px; 
+		}
+		input.password{
+			background:url(../img/password.png) center left 3px no-repeat;
+			background-size:15px 18px;
+		}
+		button{
+			background:#5584ff;
+			border-radius:35px;
+			text-align: center;
+			display: inline-block;
+			width:100%;
+			max-width: 270px;
+			color:white !important;
+			font-size:16px ;
+			font-weight: bold;
+			line-height: 49px;
+			margin-top: 89-25px;
+			outline:none;
+			border:none;
+			position: relative;
+			i{
+				position: absolute;
+				top:50%;
+				right:30px;
+				margin-top: -8px;
+			}
+		}
+	}
+}

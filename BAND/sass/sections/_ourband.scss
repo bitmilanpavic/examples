@@ -1,0 +1,106 @@
+section.ourband{
+	background:$white-ourband-base;
+	padding-top: 204px;
+	.item{
+		h2{
+			margin-bottom: 55px;
+			margin-top: 250px;
+		}
+	}
+	.carousel-control{
+		top:50%;
+		margin-top: -45px;
+		&.left{
+			background-image:none !important;
+			bottom:auto;
+			right:auto;
+		}
+		&.right{
+			background-image:none !important;
+			bottom:auto;
+			left:auto;
+		}
+	}
+	.carousel-indicators{
+		transform:rotate(270deg);
+		overflow: hidden;
+		width:100%;
+		max-width:255px;
+		position: absolute;
+		top:0px;
+		right:26%;
+		left:auto;
+		bottom:auto;
+		display: table;
+		li{
+			width:100%;
+			height:auto;
+			text-indent: 0px;
+			margin:0;
+			margin-bottom: 25px;
+			opacity:0.2;
+			color:$brown;
+			font-family: 'Lato Bold';
+			font-size: 12px;
+			ouline:none;
+			border:none;
+			position: relative;
+			display: table-row;
+			height:39px;
+			>span{
+				display: table-cell;
+				vertical-align: middle;
+				overflow: hidden;
+			}
+			span.text-right{
+				max-width:128px;
+				width:100%;
+			}
+			span.text-left{
+				max-width:100px;
+				width:100%;
+			}
+			.line{
+				>span{
+					display: inline-block;
+					width:14px;
+					height:14px;
+					border-radius:14px;
+					background:$brown;
+					position: relative;
+					top:1px;
+					margin-right: 8px;
+					margin-left: 8px;
+				}
+			}
+		}
+		li.active{
+			background:none;
+			opacity:1;
+		}
+	}
+	.carousel-inner{
+		overflow: hidden;
+		.item{
+			.row{
+				
+			
+				.col-md-5{
+					padding-top: 220px;
+				}
+				
+					
+				h1{
+					position: absolute;
+					bottom:100px;
+					right:145px;
+					color:#826b60;
+					span{
+						color:$black-base;
+					}
+				}
+			}
+		}
+	}
+
+}

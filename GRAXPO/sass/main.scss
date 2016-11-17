@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../../fonts/roboto/Roboto-Medium.ttf');
+    src: url('../../fonts/roboto/Roboto-Medium.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../../fonts/roboto/Roboto-Light.ttf');
+    src: url('../../fonts/roboto/Roboto-Light.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../../fonts/roboto/Roboto-Bold.ttf');
+    src: url('../../fonts/roboto/Roboto-Bold.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed Regular';
+    src: url('../../fonts/roboto/RobotoCondensed-Regular.ttf');
+    src: url('../../fonts/roboto/RobotoCondensed-Regular.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/roboto/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lecker';
+    src: url('../../fonts/LeckerliOne-Regular.ttf');
+    src: url('../../fonts/LeckerliOne-Regular.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/LeckerliOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Colors
+$redLight:#e84c3d;
+$darkBlue:#333b46;
+$lightBlue:#81868e;
+$blackLight:#464646;//categories color
+$afterHColor:#898989;
+$headerBg: #e1e1e1;
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: $lightBlue;
+	font-size: 14px;
+}
+
+.button{
+	border-radius:8px;
+	text-align: center;
+	line-height: 43px;
+	color:white;
+	font-family: 'Roboto Light';
+	font-size: 16px;
+	padding:0px 16px;
+	display: inline-block;
+	letter-spacing: 2.1px;
+	max-width: 220px;
+	@extend .layoutFix;
+	&.redLight{
+		background:$redLight;
+		&:hover{
+			background: darken($redLight,10%);
+			color:white;
+		}
+	}
+	&.transparent{
+		background:transparent;
+		border:1px solid white;
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+		&:hover{
+			color:white;
+		}
+	}
+}
+
+//Classes
+.f16{
+	font-size: 16px;
+}
+.fSize20{
+	font-size: 20px !important;
+}
+.db{
+	display: block;
+}
+.dib{
+	display: inline-block;
+}
+.layoutFix{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* Webkit */
+::-webkit-input-placeholder { color: $lightBlue;font-family: 'Open Sans'; }
+
+/* Firefox 4-18 */
+:-moz-placeholder { color: $lightBlue;font-family: 'Open Sans'; }
+
+/* Firefox 19+ */
+::-moz-placeholder { color: $lightBlue;font-family: 'Open Sans'; }
+
+/* IE10+ */
+:-ms-input-placeholder { color: $lightBlue;font-family: 'Open Sans'; }
+
+@keyframes bouncee {
+    0% {
+    	transform:translateY(0%);
+    }
+    100% {
+    	transform:translateY(25%);
+    }	
+}
+.bouncee{
+	animation: bouncee 1s linear 1s infinite alternate;
+}
+
+@import 'base/_index.scss';
+@import "components/_index.scss";
+@import "sections/_index.scss";
+@import "responsive/_index.scss";

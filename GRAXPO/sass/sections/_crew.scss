@@ -1,0 +1,67 @@
+section.crew{
+	padding-top: 100-24px;
+	padding-bottom: 78px;
+	.row:nth-child(2){
+		margin-top: 38px;
+	}
+	.imgContainer{
+		max-height:352px;
+		position: relative;
+	 	img{
+	 		width:100%
+	 	}
+	 	&:hover{
+	 		.hoverContainer{
+	 			opacity:1;
+	 		}
+	 	}
+	}
+	.hoverContainer{
+		opacity:0;
+		transition:opacity 0.2s linear;
+		padding:32px 22px 21px 22px;
+		position: absolute;
+		bottom:10px;
+		left:12px;
+		top:50%;
+		right:12px;
+		text-align: center;
+		background:$redLight;
+		p{
+			margin-bottom: 20px;
+			color:white;
+			font-size: 11px;
+			line-height: 20px;
+		}
+		a{
+			display: inline-block;
+			font-size: 14px;
+			color:white;
+			border:1px solid white;
+			border-radius:100%;
+			width:29px;
+			height:29px;
+			line-height: 29px;
+			text-align: center;
+		}
+		a:last-child{
+			margin-left: 10px;
+		}
+	}
+	.memberName,.memberRole{
+		display: block;
+		text-align: center;
+		color:$darkBlue;
+		word-wrap:break-word;
+	}
+	.memberName{
+		font-size: 17px;
+		font-family: 'Roboto Medium';
+		margin-top: 30px;
+		margin-bottom: 2px;
+	}
+	.memberRole{
+		font-family: 'Roboto Condensed Regular';
+		font-size: 12px;
+	}
+}

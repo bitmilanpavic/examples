@@ -1,0 +1,38 @@
+$colors: (
+    'general' : (
+        'transparent'       : transparent,
+        'white'             : #fff,
+        'black'             : #000,
+        'light-blue'        : #0079c0,
+        'dark-blue'         : #2c3c59,
+        'base-gray'         : #747a7e,
+        'normal-gray'       : #d5d5d5,
+        'light-gray'        : #ededed,
+        'lightest-gray'     : #efefef,
+        'orange'            : #fb8640,
+        'green'             : #56a35e,
+        'green-label'       : #639b67,
+        'green-label-2'     : #629b67,
+        'green-3'           : #508154,
+        'dark-green'        : #629b68,
+        'blue'              : #0079c1,
+        'sea-blue'          : #5fbbc4,
+        'pink'              : #c2526c,
+        'yellow'            : #d29d1f,
+        'purple'            : #945aaa,
+        'purple-1'          : #C1706F,
+        'dark-purple'       : #A05859,
+        'red'               : #c16f6f
+    )
+);
+
+
+$fonts: (
+    'general': 'Open Sans',
+    
+    'weight' : (
+        'normal' : normal,
+        'medium' : 600,
+        'bold'   : 700
+    )    
+);

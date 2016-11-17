@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<style>
+		body{
+			padding-left: 100px;
+			padding-right: 100px;
+			margin:0px;
+		}
+		.sslidercontainer{
+			overflow: hidden;
+			margin:0px auto;
+			position: relative;
+		}
+		.sslidercontainer>ul{
+			list-style: none;
+			padding:0px;
+			margin:0px;
+			overflow: hidden;
+			display: block;
+			position: relative;
+		}
+		.sslidercontainer>ul>li{
+			display: block;
+		}
+		.sslidercontainer>ul>li img{
+			display: block;
+			width:100%;
+			height:100%;
+		}
+		.prev,.next{
+			position: absolute;
+			bottom:0px;
+		}
+		.prev{left:200px;}.next{left:300px;}
+	</style>
+</head>
+<body>
+
+	<div id="slider">
+		<ul>
+			<li> <img src="img/1.jpg" /> </li>
+			<li> <img src="img/2.jpg" /> </li>
+			<li> <img src="img/3.jpg" /> </li>
+			<li> <img src="img/4.jpg" /> </li>
+			<li> <img src="img/5.jpg" /> </li>
+			<li> <img src="img/6.jpg" /> </li>
+			<li> <img src="img/7.jpg" /> </li>
+		</ul>
+		<button class="prev navigation">prev</button>
+  		<button class="next navigation">next</button>
+	</div>
+	
+	<script src='js/jquery-2.2.0.min.js'></script>
+	<script src='js/simpleSlider.js'></script>
+	<script>
+		$(document).ready(function(){
+			s_slider({
+				c : $('#slider'),
+				slidesToShow : 4,
+				slidesToScroll : 2,
+				animateSpeed : 500,
+				// autoplay : false,
+				// autoplaySpeed : 4000,
+				transition : 'horizontal'
+			});
+		});
+	</script>
+</body>
+</html>

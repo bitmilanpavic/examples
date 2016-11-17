@@ -1,0 +1,21 @@
+section.about{
+	padding-top: 113-20-4px;
+	.col-md-6{
+		opacity:0;
+		>img{
+			padding-left: 10px;
+			padding-top: 22px;
+			max-width: 459px;
+			max-height: 347px;
+		}
+		>div{
+			padding-left: 67px;
+			p{
+				padding-right: 60px;
+			}
+		}
+		h2{
+			max-width: 450px;
+		}
+	}
+}

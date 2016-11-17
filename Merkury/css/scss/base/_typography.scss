@@ -1,0 +1,36 @@
+a{
+	transition:all 0.2s linear;
+	text-decoration: none;
+	&:focus,&:hover,&:active{
+		text-decoration: none;
+	}	
+}
+h1{
+	color:$white;
+	font-size: $h1-size;
+	line-height: $h1-size;
+	font-weight: 100;
+	word-wrap:break-word;
+	&+h2{
+		margin-top: 10px;
+	}
+}
+h2{
+	font-size: $h2-size;
+	line-height: $h2-size;
+	color:$blue-light;
+	font-weight: 400;
+	word-wrap:break-word;
+}
+h3{
+	font-size: $h3-size;
+	line-height: $h3-size;
+	font-weight:bold;
+	word-wrap:break-word;
+	color:$blue-dark;
+}
+p{
+	word-wrap:break-word;
+	line-height: $p-line-height;
+	margin-bottom: 18px;
+}

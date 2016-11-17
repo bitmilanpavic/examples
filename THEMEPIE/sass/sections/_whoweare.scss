@@ -1,0 +1,25 @@
+section.whoweare{
+	background:$white-dark1;
+	.row{
+		display: table;
+		>div{
+			padding-top: 109px;
+			padding-bottom: 77px;
+			display: table-cell;
+			float: none;
+			vertical-align: middle;
+			h2,p{
+				max-width:570px;
+			}
+			h2:first-child{
+				margin-top: 0;
+				&+p{
+					margin-top:41-17px;	
+				}
+			}
+		}
+		.button{
+			margin-top: 6px;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+<a [routerLink]="['new']" class="btn btn-primary">Add Recipe</a><br><br>
+<ul class="list-group">
+  <a class="list-group-item" *ngFor="let recipe of recipes" [routerLink]="[recipe.id]" routerLinkActive="active">
+    <div class="col-sm-6">
+      {{recipe?.name}}<br>
+      {{recipe?.description}}
+    </div>
+    <div class="col-sm-6">
+      <img src="{{recipe.imagePath}}" alt="image" width="100" height="100">
+    </div>
+    <div class="clearfix"></div>
+  </a>
+</ul>
+

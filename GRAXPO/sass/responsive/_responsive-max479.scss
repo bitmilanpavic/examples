@@ -1,0 +1,22 @@
+@media screen and (max-width:479px){
+	section.whatwedo{
+		.action{
+			display: block;
+			>div{
+				display: block;
+				text-align: center;
+				.fa{
+					display: inline-block;
+					margin-right: 0;
+				}
+			}
+		}
+		h3{
+			max-width:none;
+			&:after{
+				left:50%;
+				margin-left: -15px;
+			}
+		}
+	}
+}

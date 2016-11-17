@@ -1,0 +1,48 @@
+section.offer{
+	padding-bottom: 35px;
+	background:$white-dark1;
+	padding-top: 110px;
+	.col-md-4{
+		width:33%;
+		float: none;
+		display: inline-block;
+		text-align: center;
+		color:$gray-darker;
+		overflow: hidden;
+		margin-bottom: 93-4-25-4px;
+		cursor:pointer;
+		&:hover{
+			span{
+				color:$blue-base;
+			}
+			.fa{
+				color:white;
+				background:$blue-base;
+			}
+		}
+		.fa{
+			font-size: 30px;
+			width:75px;
+			height:75px;
+			text-align: center;
+			line-height: 75px;
+			color:$blue-base;
+			border-radius: 100%;
+			border:1px solid $blue-base;
+			display: inline-block;
+		}
+		span{
+			display: block;
+			text-align: center;
+			font-weight: 600;
+			font-size: 16px;
+			color:$gray-darker;
+			margin-top: 29-4px;
+			margin-bottom: 21px;
+			word-wrap:break-word;
+		}
+		p{
+			line-height: 20px;
+		}
+	}
+}

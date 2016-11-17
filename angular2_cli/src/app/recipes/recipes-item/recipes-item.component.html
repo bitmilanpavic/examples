@@ -1,0 +1,22 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let recipe of recipes">
+    <div class="col-sm-12">
+      <img src="{{recipe.imagePath}}" alt="image" class="text-center">
+    </div>
+    <div class="col-sm-12">
+      <h2>{{recipe?.name}}</h2>
+      <button class="btn btn-primary" (click)="addToCart(recipe)">Add To Cart</button>
+      <a [routerLink]="['edit']" class="btn btn-default" >Edit</a>
+      <button class="btn btn-danger" (click)="delete(recipe.id)">Delete</button>
+      <h4>{{recipe?.description}}</h4>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let ing of recipe.ingredients">
+          {{ing.name}}({{ing.amount}})
+        </li>
+      </ul>
+    </div>
+
+    <div class="clearfix"></div>
+  </li>
+</ul>
+

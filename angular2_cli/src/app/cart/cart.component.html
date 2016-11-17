@@ -1,0 +1,32 @@
+<div class="container">
+  <form  [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-sm-5 form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" formControlName="name">
+      </div>
+      <div class="col-sm-2 form-group">
+        <label>Amount</label>
+        <input type="text" class="form-control" formControlName="amount">
+      </div>
+      <div class="col-xs-12">
+        <button type='submit' class="btn btn-success" *ngIf="isAdd" [disabled]="!form.valid">Add</button>
+        <button type='submit' class="btn btn-success" *ngIf="!isAdd" [disabled]="!form.valid">Save</button>
+        <button class="btn btn-danger" type="button" (click)="delete()" *ngIf="!isAdd">Delete Item</button>
+        <button class="btn btn-primary" type="button" (click)="reset()" *ngIf="!isAdd">Clear</button>
+      </div>
+    </div>
+
+  </form>
+
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="list-group" *ngIf="cartItems.length>0">
+        <a *ngFor="let item of cartItems;let i = index" class="list-group-item" (click)="onSelectItem(item, i)" routerLinkActive="active">
+          {{item.name}}({{item.amount}})
+        </a>
+      </ul>
+      <h2 *ngIf="cartItems.length==0">Empty cart</h2>
+    </div>
+  </div>
+</div>

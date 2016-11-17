@@ -1,0 +1,66 @@
+/*HEADER*/
+header{
+	width:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background:$headerBg;
+	padding-top: 60px;
+	z-index:10;
+	transition:padding 0.3s linear;
+	&.smallHeader{
+		padding-top:30px;
+		padding-bottom: 20px;
+		.navbar-header{
+			transition:top 0.3s linear;
+			top:20px !important;
+		}
+	}
+	.logo{
+		>a{
+			font-family: 'Lecker';
+			color:$redLight;
+			font-size:28px;
+			line-height: 28px;
+			position: relative;
+			top:-5px;
+			@extend .layoutFix;
+			display: inline-block;
+			max-width:200px;
+		}	
+	}
+	ul.nav{
+		padding-left: 0;
+		padding-right: 72-22px;
+		li{
+			margin-right: 22px;
+			a{
+				color:$darkBlue;
+				padding:0;
+				line-height: 14px;
+				display: block;
+				@extend .layoutFix;
+				max-width:100px;
+				&:hover{
+					color:darken($darkBlue,80%);
+				}
+				&:focus,&:hover{
+					background:none;
+				}
+			}
+		}
+	}
+	.navbar-header{
+		position: absolute;
+		top:50px;
+		right:20px;
+		button{
+			margin:0;
+		}
+		span.icon-bar{
+			background:$redLight;
+		}
+	}
+}
+
+

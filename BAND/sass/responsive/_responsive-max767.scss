@@ -1,0 +1,52 @@
+@media screen and (max-width:767px){
+	h1{
+		font-size: 90px;
+	}
+	header{
+		text-align: center;
+		ul.main-menu{
+			margin-top: 40px;
+			text-align: center;
+			display: inline-block;
+			li{
+				float:none;
+				display: inline-block;
+				margin-bottom: 25px;
+			}
+		}
+	}
+	section.tourdates{
+		.eventsContainer{
+			ul{
+				display: block;
+				padding-right: 0;
+				li{
+					display: block;
+					text-align: center;
+					>div{
+						display: inline-block;
+						padding-right: 0 !important;
+					}
+					>div:nth-child(3){
+						display: block;
+					}
+				}
+			}
+		}
+	}  
+	footer{
+		text-align: center;
+		.formContainer{
+			position: static;
+			margin-bottom: 20px;
+		}
+		.socialContainer{
+			position: static;
+			display: block;
+		}
+		h1{
+			font-size: 60px !important;
+		}
+		
+	}
+}

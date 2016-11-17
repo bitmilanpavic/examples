@@ -1,0 +1,42 @@
+.button{
+	display: inline-block;
+	width:100%;
+	max-width:138px;
+	padding:0px 10px;
+	line-height: 32px;
+	border-radius:20px;
+	font-weight:bold;
+	color:$blue-dark;
+	text-align: center;
+	border:1px solid #e0e3eb;
+	&:hover{
+		background:lighten($blue-dark,10%);
+		color:white;
+	}
+	&.blueButton{
+		color:white;
+		background:$blue-button-bg;
+		border:none;
+		border-bottom: 1px solid $blue-button-border;
+		&:hover{
+			background:lighten($blue-dark,10%);
+			color:white;
+			border-color:transparent !important;
+		}
+	}
+	&.whitLines{
+		position: relative;
+		&:after,&:before{
+			content:'';
+			height:1px;
+			width:155px;
+			position:absolute;
+			right:-180px;
+			top:15px;
+			background: #e6e9ef;
+		}
+		&:after{
+			left:-180px;
+		}
+	}
+}

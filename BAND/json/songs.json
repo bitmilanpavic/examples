@@ -1,0 +1,179 @@
+{
+    "HasErrors": false,
+    "Author": [
+        {
+            "Name": "Surprise Without Flaws",
+            "Year":"2015",
+            "Tracks":[
+                {
+                    "TrackName":"Clouds In The Forest",
+                    "TrackNumber":"01",
+                    "TrackTime":"3:20",
+                    "src":"songs/Surprise Without Flaws/Clouds In The Forest.mp3"
+                },
+                {
+                    "TrackName":"Rat In The River",
+                    "TrackNumber":"02",
+                    "TrackTime":"3:20",
+                    "src":"songs/Surprise Without Flaws/Rat In The River.mp3"
+                },
+                {
+                    "TrackName":"Giants And Companions",
+                    "TrackNumber":"03",
+                    "TrackTime":"3:20",
+                    "src":"songs/Surprise Without Flaws/Giants And Companions.mp3"
+                },
+                {
+                    "TrackName":"Ashamed Of Light",
+                    "TrackNumber":"04",
+                    "TrackTime":"3:20",
+                    "src":"songs/Surprise Without Flaws/Ashamed Of Light.mp3"
+                },
+                {
+                    "TrackName":"Doubting The Forest",
+                    "TrackNumber":"05",
+                    "TrackTime":"3:20",
+                    "src":"songs/Surprise Without Flaws/Doubting The Forest.mp3"
+
+                },
+                {
+                    "TrackName":"Criminals Of The Lake",
+                    "TrackNumber":"06",
+                    "TrackTime":"3:20",
+                    "src":"songs/Surprise Without Flaws/Criminals Of The Lake.mp3"
+                },
+                {
+                    "TrackName":"Curse Of Eternity",
+                    "TrackNumber":"07",
+                    "TrackTime":"3:20",
+                    "src":"songs/Surprise Without Flaws/Curse Of Eternity.mp3"
+                },
+                {
+                    "TrackName":"Fog In My Town",
+                    "TrackNumber":"08",
+                    "TrackTime":"3:20",
+                    "src":"songs/Surprise Without Flaws/Fog In My Town.mp3"
+                },
+                {
+                    "TrackName":"Serpent In The Mountains",
+                    "TrackNumber":"09",
+                    "TrackTime":"3:20",
+                    "src":"songs/Surprise Without Flaws/Serpent In The Mountains.mp3"
+                }  
+            ]
+        },
+        {
+            "Name": "Mists Of A Shadow",
+            "Year":"2014",
+            "Tracks":[
+                {
+                    "TrackName":"Clouds In The Forest",
+                    "TrackNumber":"01",
+                    "TrackTime":"3:20",
+                    "src":"songs/Mists Of A Shadow/Clouds In The Forest.mp3"
+                },
+                {
+                    "TrackName":"Rat In The River",
+                    "TrackNumber":"02",
+                    "TrackTime":"3:20",
+                    "src":"songs/Mists Of A Shadow/Rat In The River.mp3"
+                },
+                {
+                    "TrackName":"Giants And Companions",
+                    "TrackNumber":"03",
+                    "TrackTime":"3:20",
+                    "src":"songs/Mists Of A Shadow/Giants And Companions.mp3"
+                }
+
+            ]
+        },
+        {
+            "Name": "Heroes Of The Sun",
+            "Year":"2013",
+            "Tracks":[
+                {
+                    "TrackName":"Clouds In The Forest",
+                    "TrackNumber":"01",
+                    "TrackTime":"3:20",
+                    "src":"songs/Heroes Of The Sun/Clouds In The Forest.mp3"
+                },
+                {
+                    "TrackName":"Rat In The River",
+                    "TrackNumber":"02",
+                    "TrackTime":"3:20",
+                    "src":"songs/Heroes Of The Sun/Rat In The River.mp3"
+                },
+                {
+                    "TrackName":"Giants And Companions",
+                    "TrackNumber":"03",
+                    "TrackTime":"3:20",
+                    "src":"songs/Heroes Of The Sun/Giants And Companions.mp3"
+                },
+                {
+                    "TrackName":"Ashamed Of Light",
+                    "TrackNumber":"04",
+                    "TrackTime":"3:20",
+                    "src":"songs/Heroes Of The Sun/Ashamed Of Light.mp3"
+                },
+                {
+                    "TrackName":"Doubting The Forest",
+                    "TrackNumber":"05",
+                    "TrackTime":"3:20",
+                    "src":"songs/Heroes Of The Sun/Doubting The Forest.mp3"
+
+                } 
+
+            ]
+        },
+        {
+            "Name": "Picure Of The Past",
+            "Year":"2012",
+            "Tracks":[
+                {
+                    "TrackName":"Clouds In The Forest",
+                    "TrackNumber":"01",
+                    "TrackTime":"3:20",
+                    "src":"songs/Picure Of The Past/Clouds In The Forest.mp3"
+                },
+                {
+                    "TrackName":"Rat In The River",
+                    "TrackNumber":"02",
+                    "TrackTime":"3:20",
+                    "src":"songs/Picure Of The Past/Rat In The River.mp3"
+                },
+                {
+                    "TrackName":"Giants And Companions",
+                    "TrackNumber":"03",
+                    "TrackTime":"3:20",
+                    "src":"songs/Picure Of The Past/Giants And Companions.mp3"
+                },
+                {
+                    "TrackName":"Ashamed Of Light",
+                    "TrackNumber":"04",
+                    "TrackTime":"3:20",
+                    "src":"songs/Picure Of The Past/Ashamed Of Light.mp3"
+                },
+                {
+                    "TrackName":"Doubting The Forest",
+                    "TrackNumber":"05",
+                    "TrackTime":"3:20",
+                    "src":"songs/Picure Of The Past/Doubting The Forest.mp3"
+
+                },
+                {
+                    "TrackName":"Criminals Of The Lake",
+                    "TrackNumber":"06",
+                    "TrackTime":"3:20",
+                    "src":"songs/Picure Of The Past/Criminals Of The Lake.mp3"
+                },
+                {
+                    "TrackName":"Curse Of Eternity",
+                    "TrackNumber":"07",
+                    "TrackTime":"3:20",
+                    "src":"songs/Picure Of The Past/Curse Of Eternity.mp3"
+                }  
+
+            ]
+        }
+    ]
+}

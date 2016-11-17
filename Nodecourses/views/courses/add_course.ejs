@@ -1,0 +1,64 @@
+<% include ../../views/includes/header %>
+
+
+	<div class="col-md-4">
+		<div class="sidebar">
+			<% include ../../views/includes/sidebar %>
+		</div>
+		
+	</div>
+	<div class="col-md-8">
+		<div class="main">
+			<h1 class='text-center'>ADD NEW COURSE</h1>
+			<form action="/courses/addcourse" method="POST">
+				<div class="form-group">
+			    	<label for="type">Course Title</label>
+			    	<input type="text" class="form-control" name="course_title">
+			    	<%if(typeof errors2!='undefined' && errors2){ %>
+						<% errors2.forEach(function(error){if(error.param=='course_title'){ %>
+							<span class='alert alert-warning show'><%= error.msg %></span>
+						<% }})%>	
+					<%}%>
+			  	</div>
+				<div class="form-group">
+			    	<label for="text">Course Description</label>
+			    	<textarea name="course_desc" id="course_desc" cols="30" rows="10" class="form-control"></textarea>
+			    	<%if(typeof errors2!='undefined' && errors2){ %>
+						<% errors2.forEach(function(error){if(error.param=='course_desc'){ %>
+							<span class='alert alert-warning show'><%= error.msg %></span>
+						<% }})%>	
+					<%}%>
+			  	</div>
+			  	
+		    	<label for="text">Course Category</label>
+				<% if(typeof categories!='undefinder' && categories){categories.category.forEach(function(cat){%>
+				<div class="checkbox">
+				    <label>
+				      <input type="checkbox" name="course_category" value="<%=cat%>"> <%=cat%>
+				    </label>
+				 </div>
+				<% })} %>
+			    	<%if(typeof errors2!='undefined' && errors2){ %>
+						<% errors2.forEach(function(error){if(error.param=='course_category'){ %>
+							<span class='alert alert-warning show'><%= error.msg %></span>
+						<% }})%>	
+					<%}%>
+			  	<div class="form-group">
+			    	<label for="text">Price</label>
+			    	<input type="number" class="form-control" name="course_price">
+			    	<%if(typeof errors2!='undefined' && errors2){ %>
+						<% errors2.forEach(function(error){if(error.param=='course_price'){ %>
+							<span class='alert alert-warning show'><%= error.msg %></span>
+						<% }})%>	
+					<%}%>
+			  	</div>
+			  	<input type="submit" class='btn btn-default' value='Add Course'>
+			  	<% if(typeof userExists != 'undefined' && userExists){ %>
+					<span class='alert alert-danger show'>User whit that email alredy exists</span>
+				<%}%>
+			</form>
+		</div>
+	</div>
+
+
+<% include  ../../views/includes/footer %>

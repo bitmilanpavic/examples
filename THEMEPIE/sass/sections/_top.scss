@@ -1,0 +1,25 @@
+section.top{
+	height:100vh;
+	background:url(../../img/topBg.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 309px;
+	.carousel-control{
+		display: none;
+	}
+	.dInlineBlock{
+		margin-top: 74-16px;
+		a:first-child{
+			margin-right: 26px;
+		}
+	}
+	.carousel{
+		height:100%;
+	}
+	.carousel-indicators{
+		bottom:64px;
+	}
+	h1{
+		max-height:300px;
+		overflow: hidden;
+	}
+}

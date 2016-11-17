@@ -1,0 +1,22 @@
+section.createBussines{
+	background:url(../../img/bussinesBg.jpg) no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	position: relative;
+	&:after{
+		content:'';
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background:rgba(0,0,0,.8);
+		position: absolute;
+	}
+	.col-md-12{
+		position: relative;
+		z-index:2;
+		padding-top: 112-24px;
+		padding-bottom: 106px;
+		outline-style: 106px;
+	}
+}

@@ -1,0 +1,119 @@
+section.portfolio{
+	.row:first-child{
+		.dInlineBlock{
+			margin-top: 41-19px;
+			margin-bottom: 80px;
+			a{
+				display: inline-block;
+				font-size: 15px;
+				font-weight: 600;
+				color:$gray-darker;
+				border-bottom:2px solid transparent;
+				padding-bottom: 22px;
+				margin-right: 31-4px;
+				max-width:150px;
+				@extend .layoutFix;
+				&:hover,&.active{
+					color:$blue-lighter;
+					border-color:$blue-lighter;
+				}
+			}
+		}
+	}
+	div.col-md-4{
+		>a{
+			display: block;
+			&:hover{
+				.imgContainer{
+					&:after{
+						opacity:1;
+					}
+					>span{
+						opacity:1;
+					}
+				}
+				.infoContainer{
+					background:$blue-base;
+					>div{
+						span,i,h4,h4>small{
+							color:$white !important;
+						}
+					}
+				}
+			}
+			margin-bottom: 38px;
+		}
+	}
+	
+	.imgContainer{
+		transition:opacity 0.2s linear;
+		line-height: 304px;
+		position: relative;
+		>span{
+			position: absolute;
+			background:$white;
+			left:50%;
+			top:50%;
+			display: block;
+			z-index:1;
+			opacity:0;
+			transition: opacity 0.2s linear;
+		}
+		>span:first-child{
+			width:96px;
+			margin-left: -48px;
+			height:1px;	
+		}
+		>span:nth-child(2){
+			width:1px;
+			height:96px;
+			margin-top: -48px;
+		}
+		img{
+			vertical-align: middle;
+			width:100%;
+			max-height: 304px;
+		}
+		&:after{
+			content:'';
+			position: absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+			background:rgba($blue-base, .6);
+			opacity:0;
+			transition: opacity 0.2s linear;
+		}
+	}
+
+	.infoContainer{
+		display: table;
+		width:100%;
+		background:$white-dark2;
+		padding:11px 7px 15px 20px;
+		transition: all 0.2s linear;
+		>div{
+			display: table-cell;
+			vertical-align: middle;
+			span{
+				font-size: 10px;
+				padding-right: 10-4px;
+				color:$gray-darker;
+				max-width:41px;
+				overflow: hidden;
+				display: inline-block;
+			}
+			i{
+				margin-right: 8px;
+				font-size: 15px;
+				color:$gray-darker;
+				display: inline-block;
+			}
+			h4{
+				max-width:195px;
+				@extend .layoutFix;
+			}
+		}
+	}
+}

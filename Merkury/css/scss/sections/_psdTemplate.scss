@@ -1,0 +1,124 @@
+.psdTemplate{
+	background:#f6f7fa;
+	padding-bottom: 69px;
+	.button.blueButton{
+		margin-top: 25px;
+	}
+	h1{
+		padding-top: 62px;
+		margin-top:0;	
+		margin-bottom: 30px;
+	}
+	.layoutsContainer{
+		background:url(../img/psdTemplate/table.png) top center no-repeat;
+		padding-top: 32px;
+		padding-bottom: 125-50px;
+		margin-top: 37px;
+	}
+	.layout{
+		p{
+			max-width: 185px;
+		}
+		h3{
+			position: relative;
+			padding-bottom: 30px;
+			min-width: auto !important;
+			position: relative;
+			overflow-x: hidden;
+			&:before{
+				content:'';
+				width:100%;
+				height:3px;
+				position: absolute;
+				top:30px;
+				left:0px;
+				background:#5584ff;
+			}
+			&.showCircle{
+				&:after{
+					content:'';
+					position:absolute;
+					right:0px;
+					top:19px;
+					border-radius: 100%;
+					width:26px;
+					height:26px;
+					border:6px solid #99b5ff;
+					background: #5584ff;
+				}	
+			}
+			
+		}
+		&.layoutLeft{
+			h3{
+				&:before{
+					transform:translateX(-100%);
+				}
+				&.animateLine{
+					 &:before{
+						animation:animateLine 0.8s linear forwards;
+					}
+				}	
+			}
+		}
+		&.layoutRight{
+			text-align: right;
+			margin-top: 220px;
+			h3{
+				&:before{
+					transform:translateX(100%);
+				}
+				&.animateLine{
+					 &:before{
+						 animation:animateLineRight 0.8s linear forwards;
+					}
+				}
+				&:after{
+					right:auto;
+					left:0px;
+				}	
+			}
+			p{
+				display: inline-block;
+			}
+		}
+	}
+	.pricingContainer{
+		text-align: center;
+
+		h1{
+			margin-bottom: 65px;
+		}
+		.pricingTable{
+			display: inline-block;
+			width:100%;
+			max-width:250px;
+			background:$white;
+			box-shadow: -1px 3px 54px -8px rgba(0,0,0,0.2);
+			text-align: center;
+			margin-bottom: 65px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+		}
+		.pricing{
+			display: inline-block;
+			color:$blue-dark;
+			margin-top: 4px;
+			margin-bottom: 15px;
+		}
+		.dollar{
+			font-size: 40-(40*0.2px);
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+		}
+		.amount{
+			font-size: 70-(70*0.2px);
+			font-family: 'Roboto', sans-serif;
+			font-weight: bold;
+		}
+		.month{
+			color:$blue-light;
+			font-size: 24-(24*0.2px);
+		}
+	}
+}

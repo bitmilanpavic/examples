@@ -1,0 +1,16 @@
+@media screen and (max-width:1199px){
+	section.playlist{
+		.row:last-child{
+			ul.Discography{
+				li{
+					div.circleContainer{
+						padding:0px 15px;
+					}
+					div.listenButtonContainer{
+						padding-left: 21px;
+					}
+				}
+			}
+		}
+	}
+}

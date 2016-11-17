@@ -1,0 +1,43 @@
+<% if(!user){ %>
+<form action="/users/login" method="POST">
+	<div class="form-group">
+    	<label for="text">Email:</label>
+    	<input type="text" class="form-control" name="email">
+    	<%if(typeof errors!='undefined' && errors){ %>
+			<% errors.forEach(function(error){if(error.param=='email'){ %>
+				<span class='alert alert-warning show'><%= error.msg %></span>
+			<% }})%>	
+		<%}%>
+  	</div>
+  	<div class="form-group">
+    	<label for="email">Password</label>
+    	<input type="password" class="form-control" name="password">
+    	<%if(typeof errors!='undefined' && errors){ %>
+			<% errors.forEach(function(error){if(error.param=='password'){ %>
+				<span class='alert alert-warning show'><%= error.msg %></span>
+			<% }})%>	
+		<%}%>
+  	</div>
+  	<input type='hidden' name='url' value='<%= (url)?url:''; %>'>
+  	<a href="/users/register" class='btn btn-info'>Sign Up</a>
+  	<input type="submit" value="Log In" class='btn btn-default pull-right'>
+</form>
+<% } %>
+
+<% if(user){ %>
+	<form action='/users/logout' method='POST' class='pull-left'>
+	    <button type='submit' class='btn btn-muted'>Log Out</button>
+	</form>
+	<h4 class='pull-right'>Hello <span class='text-primary'>  <%=user.name%> <%=user.lastname%></span></h4>
+	<div class="clearfix"></div>
+	<hr>
+	<a href="/courses/mycourses" class='btn btn-primary pull-left'>My Courses</a>
+	<% if(user.type!=='student'){ %>
+	<a href="/courses/addcourse" class='btn btn-info pull-right'>Add Course</a>
+	<% } %>
+	<div class="clearfix"></div>      
+<% } %>
+<% if(messages){ %>
+   <%- messages()  %>
+<% } %>
+	

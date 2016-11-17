@@ -1,0 +1,221 @@
+section.tourdates{
+	background:#f1eeed;
+	>.container{
+		>h2{
+			margin-top: 77px;
+			margin-bottom: 87px;
+		}
+	}
+	.eventsContainerTop{
+		position: relative;
+		max-width:1000px;
+		margin:0px auto;
+		&:before{
+			content:'';
+			position: absolute;
+			top:-20px;
+			left:-24px;
+			width:100%;
+			height:2px;
+			background:$white-base;
+		}
+		.sliderDots{
+			position: absolute;
+			top:-26px;
+			left:0;
+			margin:0;
+			padding:0;
+			list-style: none;
+			width:100%;
+			text-align: center;
+			display: table;
+			li{
+				display: table-cell;
+				>span{
+					position: relative;
+					&:after{
+						visibility: visible;
+						position: relative;
+						content:'';
+						outline:none;
+						border:none;
+						display: inline-block;
+						border-radius:100%;
+						background:#e4dddb;
+						width:14px;
+						height:14px;
+						float: left;
+						position: relative;
+						z-index:10;
+					}
+					
+				}
+			}
+			li.center{
+				>span{
+					&:after{
+						background:#241c18;	
+					}
+				}
+			}
+			li.rightOff{
+				>span{
+					&:after{
+						background:#826b60;	
+					}
+				}
+			}
+		}
+		.slide{
+			.contentContainer{
+				position: relative;
+				right:250px;
+				width:300px;
+				span{
+					display: block;
+					text-align: right;
+					font-family: 'Lora Bold';
+					font-size: 16px;
+					line-height: 16px;
+				}
+			}
+		}
+		.bx-wrapper{
+			height:400px !important;
+			.bx-viewport{
+				height:400px !important;
+				border:none;
+				box-shadow: none;
+				background:transparent;
+			}
+			.bx-prev{
+				background:url(../../img/leftSmall.png) no-repeat;
+				width:25px;
+				height:47px;
+				top:33%;
+				left:-55px;
+			}
+			.bx-next{
+				background:url(../../img/rightSmall.png) no-repeat;
+				width:25px;
+				height:47px;
+				top:33%;
+				right:-6px;
+			}
+		}
+		.eventsContainerTopSlider{
+			.slide{
+				transform:rotate(-90deg);
+				&.leftAll{
+					.contentContainer{
+						span{
+							color:#e4dddb !important;	
+						}
+					}
+				}
+				&.activeSlide{
+					.contentContainer{
+						span{
+							color:#241c18 !important;	
+						}
+					}	
+				}
+				&.rightAll{
+					.contentContainer{
+						span{
+							color:#826b60 !important;	
+						}
+					}
+				}
+			}
+		}
+			
+	}
+	.eventsContainer{
+		outline:none;
+		position: relative;
+		left:49px;
+		margin:0px auto;
+		width:100%;
+		max-width: 1268px;
+		color:#241c18;
+		max-height:286px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		.jspDrag{
+			background:#cbc2bd;
+		}
+		.jspTrack{
+			background:#eae5e3;
+		}
+		ul{
+			list-style: none;
+			padding:0px;
+			margin:0px;
+			display: table;
+			width:100%;
+			padding-right: 61px;
+			li{
+				background:url(../../img/pattern3.jpg) repeat-x;
+				background-position:left bottom;
+				display: table-row;
+				>div{
+					display: table-cell;
+					vertical-align: middle;
+					padding-top: 12px;
+					padding-bottom: 16px;
+				}
+				>div:first-child{
+					width:143px;
+				}
+				>div:nth-child(2){
+					width:27px;
+				}
+				>div:last-child{
+					padding-right: 46px;
+					a{
+						float: right;
+					}
+				}
+			}
+		}
+		.dateNumber{
+			font-size: 50px;
+			font-family: 'Oswald Bold';
+			display: inline-block;
+			padding-right: 3px;
+			padding-left: 30px;
+		}
+		.monthYear{
+			display: inline-block;
+			font-family: 'Oswald Bold';
+			font-size: 23px;
+			>span:first-child{
+				margin-bottom: -6px;
+				margin-top: 6px;
+			}
+			>span{
+				display: block;
+			}
+			
+		}
+		.line{
+			width:6px;
+			height:45px;
+			display: block;
+			background:$white-base;
+		}
+		h3{
+			margin: 0;
+			margin-top: -4px;
+			letter-spacing: 0.050em !important;
+			.twoLines{
+				padding-left: 27px;
+				padding-right: 7px;
+			}
+		}
+		a.buy{
+			width:123px;
+		}
+	}
+}

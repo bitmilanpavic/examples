@@ -1,0 +1,33 @@
+section.sliderBottom{
+	background:url(../../img/sliderBottomBg.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: table;
+	height:515px;
+	overflow: hidden;
+	width:100%;
+	#carousel-example-genericBottom{
+		display: table-cell;
+		vertical-align: middle;
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+	.fa{
+		color:white;
+		font-size: 50px;
+	}
+	h2{
+		font-size: 25px;
+		font-family: 'Roboto Thin';
+		color:$white;
+		padding:0px 100px;
+		margin-top: 30px;
+		line-height: 36px;
+		span{
+			font-family: 'Roboto Medium';
+		}
+	}
+	.carousel-control{
+		display: none !important;
+	}
+}

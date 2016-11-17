@@ -1,0 +1,84 @@
+section.subscribe{
+	background:url(../../img/subscribeBg.jpg) center center no-repeat;
+	background-size:100% 700px;
+	background-attachment: fixed;
+	position: relative;
+	.row{
+		position: relative;
+		z-index:1;
+	}
+	.col-sm-6:first-child{
+		height:306px;
+		padding-left: 90px;
+	}
+	.col-sm-6:last-child{
+		padding-left: 50px;
+		height:306px;
+	}
+	h3{
+		font-size: 18px;
+		margin-bottom: 45-12px;
+		// max-width:600px;
+		&:after{
+			top:34px !important;
+		}
+	}
+	p{
+		color:white;
+	}
+	.contentContainer{
+		position: relative;
+		top:50%;
+		transform:translateY(-50%);
+		p{
+			margin-bottom: 0;
+		}
+		h3{
+			margin-top: 0;
+		}
+	}
+	.inputContainer{
+		position: absolute;
+		top:50%;
+		left:50px;
+		margin-top: -20px;
+		input[type='email']{
+			background:transparent;
+			float: left;
+			outline:none;
+			border:1px solid white;
+			border-right:none;
+			line-height: 40px;
+			padding-left: 22px;
+			width:274-22px;
+			font-size: 12px;
+			font-family: 'Open Sans';
+			font-weight: 300;
+			color:white;
+		}
+		button{
+			background:none;
+			color:white;
+			padding-right: 28px;
+			padding-left: 31px;
+			float: right;
+			border:1px solid white;
+			outline:none;
+			font-size: 12px;
+			line-height: 40px;
+			font-family: 'Roboto Bold';
+			max-width: 126px;
+			overflow: hidden;
+		}
+	}
+	
+	&:after{
+		content:'';
+		background:rgba($redLight,.8);
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+}

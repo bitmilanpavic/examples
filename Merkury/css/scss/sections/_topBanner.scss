@@ -1,0 +1,22 @@
+section.topBanner{
+	background:url(../img/blueBg.jpg),url(../img/topBanner/topBannerBg.jpg);
+	background-size:100% 755px, 100% 755px;
+	background-repeat: no-repeat, no-repeat;
+	background-color:white;
+	background-position: 0px -30px;
+	padding-top: 115px;
+	position: relative;
+	margin-top: 48px;
+	padding-bottom:145-40px;	
+	.topBannerImg{
+		margin-bottom: -87px;
+		margin-top: 75px;
+		display: inline-block;
+	}
+	h2{
+		margin-bottom: 59px;
+	}
+	&.animateBg{
+		animation: topBannerBg 2.2s linear  forwards;	
+	}
+}

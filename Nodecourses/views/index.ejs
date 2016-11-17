@@ -1,0 +1,21 @@
+<% include includes/header %>
+
+<div class="col-md-4">
+	<% include includes/sidebar %>
+</div>
+<div class="col-md-8">
+	<h1 class='text-center'>Welcome to Udemy Courses</h1>
+	<hr>	
+	<% if(courses){ courses.forEach(function(course){ %>
+		<h2><a href="/courses/<%=course._id%>/details"><%= course.course_title %></a></h2>
+		<span>By: <%= course.course_instructor_name %><%= course.course_instructor_lastname %></span>,
+		<span>Date: <%- moment(course.course_date).format("D/M/YYYY") %>,</span>
+		<span>Category: <%=course.course_categories %></span>
+		<div style='padding: 40px 0px;'>
+			<%= course.course_body %>
+		</div>
+		<span class='btn btn-info'>Price: $<%= course.course_price %></span>
+	<%	})} %>
+</div>
+
+<% include includes/footer %>

@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../../fonts/roboto/Roboto-Medium.ttf');
+    src: url('../../fonts/roboto/Roboto-Medium.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../../fonts/roboto/Roboto-Light.ttf');
+    src: url('../../fonts/roboto/Roboto-Light.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../../fonts/roboto/Roboto-Bold.ttf');
+    src: url('../../fonts/roboto/Roboto-Bold.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('../../fonts/roboto/Roboto-Thin.ttf');
+    src: url('../../fonts/roboto/Roboto-Thin.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/roboto/Roboto-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed Regular';
+    src: url('../../fonts/roboto/RobotoCondensed-Regular.ttf');
+    src: url('../../fonts/roboto/RobotoCondensed-Regular.ttf?#iefix') format('embedded-opentype'),
+         url('../../fonts/roboto/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+// Colors
+$blue-lighter:#2c8be3;
+$blue-base:#2888e2;
+$blue-darker:#1565af;
+
+$bodyColor:#7f7f7f;
+$black-lighter:#333333; // H color
+$black-light:#2a2a2a;
+$gray:#959595;
+$gray-darker:#666666;
+
+$white:white;
+$white-dark1:#efefef;
+$white-dark2:#f1f1f2;
+$white-dark3:#d9d9d9;
+$black:black;
+.blue-lighter{
+	color:$blue-lighter;
+}
+body{
+	font-family: 'Open Sans';
+	font-weight: 300;
+	color:$bodyColor;
+	font-size: 14px;
+}
+h1,h2,h3,h4,p{
+	word-wrap: break-word;
+}
+h1{
+	//LS0
+	font-size: 54px;
+	font-family: 'Roboto Medium';
+	line-height: 80px;
+	color:$white;	
+}
+h2{
+	font-size: 30px;
+	color:$black-lighter;
+	letter-spacing: 0.05em;
+	&.white{
+		color:$white;
+	}
+	small{
+		display: block;
+		font-size: 15px;
+		color:$gray;
+		margin-top: 10px;
+		letter-spacing: 0.05em;
+	}
+	&.bigFromTop{
+		margin-top: 103px;
+	}
+	//LS50
+}
+h3{
+	//LS 400
+	font-size: 22px;
+	font-family: 'Open Sans';//regular
+}
+h4{
+	font-size: 16px;
+	color:$black-light;
+	small{
+		display: block;
+		color:$bodyColor;
+		font-size: 13px;
+		margin-top: 5px;
+	}
+	&.white{
+		color:white;
+		small{
+			color:white;
+		}
+	}
+}
+p{
+	line-height: 26px;
+	margin-bottom: 25px;
+	&.gray{
+		color:$gray;
+	}
+	//38px
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	transition:all 0.2s linear;
+	&:hover,&:focus{
+		text-decoration: none;
+	}
+}
+small{
+	margin-bottom: 1px;
+}
+// menu open sans semibold (lettter spacing 50)
+
+
+.f16{
+	font-size: 16px;
+}
+.f26{
+	font-size: 26px;
+}
+.buttonTop{
+	// LS 50
+	font-size: 20px;
+	font-family: 'Open Sans'; //regular
+	font-weight: normal;
+	line-height: 52px;
+	padding:0 30px;
+	max-width:230px;
+	@extend .layoutFix;
+	display: inline-block;
+	letter-spacing: 0.050em;
+	&.blueButton{
+		background:$blue-base;
+		color:$white;
+		box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+		&:hover{
+			background:darken($blue-base,10%);
+			
+		}
+	}
+	&.whiteButton{
+		background:$white;
+		color:$blue-base;
+		&:hover{
+			background:darken($white,10%);
+		}
+	}
+}
+.button{
+	color:white;
+	font-size: 13px;
+	padding-right: 22px;
+	padding-left: 20px;
+	border-bottom-width: 5px;
+	line-height: 40px;
+	max-width:180px;
+	background: $blue-base;
+	border-bottom:5px solid $blue-darker;
+	@extend .layoutFix;
+	&:hover{
+		color:white;
+		background:darken($blue-base,10%);
+	}
+	&:focus{
+		color:white;
+	}
+}
+.starUl{
+	padding-left: 0;
+	margin:0;
+	list-style: none;
+	li{
+		padding-left: 24px;
+		position: relative;
+		margin-bottom: 10px;
+		word-wrap:break-word;
+		&:after{
+			content:url(../../img/star.png);
+			position: absolute;
+			top:0px;
+			left:0px;
+		}
+	}
+}
+.layoutFix{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.dInlineBlock{
+	display: inline-block;
+}
+.dBlock{
+	display: block;
+}
+.dInline{
+	display: inline;
+}
+.fontRobotoThin{
+	font-family: 'Roboto Thin';
+}
+
+/* Webkit */
+::-webkit-input-placeholder { color: $white;font-size:16px;letter-spacing: 0.1em; }
+
+/* Firefox 4-18 */
+:-moz-placeholder { color: $white;font-size:16px;letter-spacing: 0.1em; }
+
+/* Firefox 19+ */
+::-moz-placeholder { color: $white;font-size:16px;letter-spacing: 0.1em; }
+
+/* IE10+ */
+:-ms-input-placeholder { color: $white;font-size:16px;letter-spacing: 0.1em; }
+.emailContainer input{
+	/* Webkit */
+::-webkit-input-placeholder { color: red;font-size:16px;letter-spacing: 0.1em; }
+
+/* Firefox 4-18 */
+:-moz-placeholder { color: red;font-size:16px;letter-spacing: 0.1em; }
+
+/* Firefox 19+ */
+::-moz-placeholder { color: red;font-size:16px;letter-spacing: 0.1em; }
+
+/* IE10+ */
+:-ms-input-placeholder { color: red;font-size:16px;letter-spacing: 0.1em; }
+}
+
+.emailContainer input{
+
+
+	&::-webkit-input-placeholder {
+		color: red;
+		font-size:16px;
+		letter-spacing: 0.1em;
+	}
+}
+
+
+@import 'components/_index.scss';
+@import 'sections/_index.scss';
+@import 'responsive/_index.scss';

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>Users</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+	<link rel="stylesheet" href="css/dragula.min.css">
+	<link rel="stylesheet" href="css/simplePagination.css">
+	<link rel="stylesheet" href="css/fullcalendar.min.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+	<div class="dashContainer">
+		<div class="dashLeft dashLeftDesktop">
+			<a href="index.html" class="logo">
+	          	<img src="img/logo.png" alt="logo">
+	        	<span class='toggleHide'>Deploy Scout</span>
+	        </a>
+	        <ul class='dashMenu desktop expanded'>
+	        	<li><a href="index.html"><img src="img/dashMenu/homeBig.png" alt=""><span class="toggleHide">Home</span></a></li>
+	        	<li><a href="workflow.html"><img src="img/dashMenu/workflowBig.png" alt=""><span class="toggleHide">Workflow</span></a></li>
+	        	<li><a href="statistics.html"><img src="img/dashMenu/statistictsBig.png" alt=""><span class="toggleHide">Statistics</span></a></li>
+	        	<li><a href="calendar.html"><img src="img/dashMenu/calendarBig.png" alt=""><span class="toggleHide">Calendar</span></a></li>
+	        	<li class='active'><a href="users.html"><img src="img/dashMenu/usersBig.png" alt=""><span class="toggleHide">Users</span></a></li>
+	        	<li><a href="settings.html"><img src="img/dashMenu/settingsBig.png" alt=""><span class="toggleHide">Settings</span></a></li>
+	        </ul>
+		</div>
+		<div class="dashLeft dashLeftMobile">
+			<a href="index.html" class="logo logoMobile">
+	          	<img src="img/logo.png" alt="logo">
+	        	Deploy Scout
+	        	<a href="#" class="closeMobile">X</a>
+	        </a>
+	        <ul class='dashMenu mobile'>
+	        	<li><a href="index.html"><img src="img/dashMenu/homeBig.png" alt="">Home</a></li>
+	        	<li><a href="workflow.html"><img src="img/dashMenu/workflowBig.png" alt="">Workflow</a></li>
+	        	<li><a href="statistics.html"><img src="img/dashMenu/statistictsBig.png" alt="">Statistics</a></li>
+	        	<li><a href="calendar.html"><img src="img/dashMenu/calendarBig.png" alt="">Calendar</a></li>
+	        	<li class='active'><a href="users.html"><img src="img/dashMenu/usersBig.png" alt="">Users</a></li>
+	        	<li><a href="settings.html"><img src="img/dashMenu/settingsBig.png" alt="">Settings</a></li>
+	        </ul>
+		</div>
+
+
+
+		<div class="dashRight">
+			<div class="dashRightTop">
+				<div class="col-xs-4 col-sm-5">
+					<a href="#" class='menuIcon menuIconDesktop'>
+						<i class="fa fa-caret-left" aria-hidden="true" title="Toggle dropdown menu"></i>
+						<img src="img/dashMenuIcon.png" alt="">
+					</a>
+					<a href="#" class='menuIcon menuIconMobile'>
+						<i class="fa fa-caret-left" aria-hidden="true" title="Toggle dropdown menu"></i>
+						<img src="img/dashMenuIcon.png" alt="">
+					</a>
+					<form action="#" class='searchForm'>
+						<input type="text" placeholder="Search">
+						<button class='search' type='submit'>
+							<img src="img/searchIcon.png" alt="search" width="17" height="18">
+						</button>
+					</form>
+					<a href="#" class='searchIcon'>
+						<img src="img/searchIcon.png" alt="saerch" width="17" height="18">
+					</a>
+				</div>
+
+				<div class="col-xs-8 col-sm-7 text-right">
+					<ul class='topActions'>
+						<li class='_addProject'>
+							<a href="#" class='button blueButton'>
+								+ Add project
+							</a>
+							<form action="#">
+								<ul class='dashBox text-left'>
+									<li>
+										<div class="form-group">
+								    		<label for="field1">Field 1:</label>
+								    		<input type="text" class="form-control" name="field1" id="field1">
+								  		</div>	
+									</li>
+									<li>
+										<div class="form-group">
+								    		<label for="field2">Field 2:</label>
+								    		<input type="text" class="form-control" name="field2" id="field2">
+								  		</div>	
+									</li>
+									<li>
+										<div class="form-group">
+								    		<label for="field3">Field 3:</label>
+								    		<input type="text" class="form-control" name="field3" id="field3">
+								  		</div>	
+									</li>					
+									<li>
+										<div class="form-group">
+								    		<label for="field4">Field 4:</label>
+								    		<input type="text" class="form-control" name="field4" id="field4">
+								  		</div>	
+									</li>
+								</ul>
+							</form>
+						</li>
+						<li class='_messages'>
+							<a href="#">
+								<img src="img/messagesIcon.png" alt="" width='24' height='16'>
+							</a>
+							<ul class='dashBox'>
+								<li>asd</li>
+								<li>asd</li>
+								<li>asd</li>
+								<li>asd</li>
+							</ul>
+						</li>
+						<li class='_alerts'>
+							<a href="#">
+								<img src="img/bell.png" alt="bell" width='17' height='19'>
+								<span>3</span>
+							</a>
+							<ul class='dashBox'>
+								<li>asd</li>
+								<li>asd</li>
+								<li>asd</li>
+								<li>asd</li>
+							</ul>
+						</li>
+						<li class='_userSettings'>
+							<a href="#">
+								<span class="userImageContainer">
+									<img src="img/userImage.png" alt="user">
+								</span>
+								<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i>
+							</a>
+							<ul class='dashBox'>
+								<li>One</li>
+								<li>Two</li>
+								<li>Three</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<section class='container-fluid'>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="tableModule">
+							<div>
+								<h2 class='noMargin'><span class="blue-dark">Users</span> <span class="totalUserCount">(128)</span></h2>
+							</div>
+							<div class='text-right'>
+								<select name="" id="" class='_custom'>
+									<option>Sort: Active first</option>
+									<option>Sort: Active first</option>
+									<option>Sort: Active first</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12 tableContainer">
+						
+						<table class='table table-border hidden'>
+							<thead>
+								<tr>
+									<td>Name</td>
+									<td>Last activity</td>
+									<td>Mail</td>
+									<td>Phone</td>
+									<td>&nbsp;</td>
+								</tr>
+							</thead>
+							<tbody id="myTable">
+								<tr class='active'>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td class='_greenColor'>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										Online now!
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr class='active'>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td class='_greenColor'>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										Online now!
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="imgContainer">
+											<img src="img/users/userIcon2.png" alt="">
+										</div>
+										<span class="userInfo"><span class="userName">Josh Doe1</span>
+											<span class="userRole">CEO1</span></span>
+									</td>
+									<td>
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										20 minutes ago
+									</td>
+									<td class='blue-dark'>
+										johndoe@design.com
+									</td>
+									<td class='blue-dark'>
+										(000) 111 222 333
+									</td>
+									<td >
+										<a href="#" class="displayInlineBlock">
+											<img src="img/options.png" alt="options">
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						 <div id="paginate"></div>	
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+<script src='js/jquery-1.12.4.min.js'></script>
+<script src='js/chart.min.js'></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dragula.min.js"></script>
+<script src="js/jquery.simplePagination.js"></script>
+<script src='js/moment.min.js'></script>
+<script src='js/fullcalendar.min.js'></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</body>
+</html>

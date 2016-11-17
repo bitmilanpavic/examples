@@ -1,0 +1,61 @@
+.middleBanner{
+background:$white;
+	.features{
+		padding-top: 70px;
+		margin-bottom: 91px;
+		>div{
+			float: none !important;
+			width:33%;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			margin-bottom: 50px;
+			position: relative;
+			.imgContainer{
+				display: inline-block;
+				width:100%;
+				max-width:62px;
+				line-height: 59px;
+				img{
+					max-width:100%;
+				}
+			}
+			.button{
+				margin-top: 12px;
+			}
+		}
+		>div:nth-child(3n+2){
+			&:before{
+				content:'';
+				position: absolute;
+				width:50%;
+				top:30px;
+				left:0px;
+				transform:translateX(-50%);
+				height:1px;
+				background: #ebedf2;
+			}
+			&:after{
+				content:'';
+				position: absolute;
+				width:50%;
+				top:30px;
+				right:0px;
+				transform:translateX(50%);
+				height:1px;
+				background: #ebedf2;
+			}
+		}
+	}
+	.browser{
+		background:url(../img/middleBanner/browserBg.png) top right no-repeat;
+		padding-bottom: 192-77px;
+		h1{
+			margin-bottom: 30px;
+			margin-top: 54px;
+		}
+		.listCorrect{
+			margin-top: 37px;
+		}
+	}
+}

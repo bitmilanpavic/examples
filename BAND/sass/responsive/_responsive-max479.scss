@@ -1,0 +1,38 @@
+@media screen and (max-width:479px){
+	section.playlist{
+		.row:last-child{
+			.col-md-8:first-child{
+				ul.Discography{
+					li{
+						display: block;
+						margin-bottom: 25px;
+						text-align: center;
+						.nameContainer{
+							display: block;
+							width:100%;
+							margin-bottom: 10px;
+						}
+						.circleContainer{
+							display: none !important;
+						}
+					}	
+				}
+			}
+			ul.tracks{
+				
+				li{
+					a{
+						padding-left: 0 !important;
+						display: block;
+						text-align: center;
+					}
+					span{
+						float:none !important;
+						display: block;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}

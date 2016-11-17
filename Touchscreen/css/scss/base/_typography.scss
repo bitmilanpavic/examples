@@ -1,0 +1,35 @@
+h1,h2,h3{
+	max-width: 100%;
+	overflow: hidden;
+	// text-overflow:ellipsis;
+}
+h1{
+	font-size: 36px;
+	line-height: 45px;
+	font-weight: 800; //Extra Bold
+	color:$white-color;	
+}
+h2{
+	font-size:50px;
+	line-height: 60px;
+	font-weight: 800; //Extra Bold
+	color:$blue-darker-color;
+	margin-bottom: 37px;
+}
+h3{
+	font-size: 44.36px;
+	line-height: 53.23px;	
+	font-weight: 800; //Extra Bold
+	color:$blue-darker-color;
+}
+p{
+	line-height:27.2px;
+	margin-bottom: 28px;
+}
+a{
+	transition:all 0.2s linear;
+	text-decoration: none;
+	&:focus,&:hover,&:active{
+		text-decoration: none;
+	}	
+}

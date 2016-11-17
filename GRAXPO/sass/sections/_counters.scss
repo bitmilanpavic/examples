@@ -1,0 +1,44 @@
+section.counters{
+	display: block;
+	background:url(../../img/bg.jpg) no-repeat;
+	background-size: 100% 1047px;
+	background-attachment: fixed;
+	position: relative;
+	color:white;
+	padding-top: 136px;
+	padding-bottom: 95px;
+	&:before{
+		content:'';
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		background:rgba($redLight,.8);
+	}
+	.fa{
+		font-size: 40px;
+		position: absolute;
+		top:50%;
+		left:0;
+		transform:translateY(-50%);
+	}
+	span{
+		font-size: 30px;
+		font-family:'Roboto Condensed Regular';
+		margin-left: 51px;
+		width:60px;
+		display: inline-block;
+		overflow: hidden;
+	}
+	h3{
+		margin-top: 29px;
+		max-width: 200px;
+	}
+	.dib{
+		text-align:left;
+	}
+	.counterContainer{
+		position: relative;
+	}
+}

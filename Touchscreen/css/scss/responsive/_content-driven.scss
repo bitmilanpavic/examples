@@ -1,0 +1,29 @@
+@media(min-width:1200px) and (max-width:1659px){
+	.home .top-banner h1{
+		margin-top: -32px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+	/**************************************
+	**********      MENU     ************
+	***************************************/
+
+	.navbar-nav>li{
+		float:none;
+		text-align: center;
+	}
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-nav {
+        float:none;
+    }
+}

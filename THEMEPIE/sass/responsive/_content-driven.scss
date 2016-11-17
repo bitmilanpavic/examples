@@ -1,0 +1,65 @@
+@media screen and (max-width:1600px){
+	section.top{
+		padding-bottom: 150px;
+		padding-top: 200px;
+		height:100%;
+		h1{
+			max-height:none;
+		}
+	}
+}
+@media screen and (max-width:860px){
+	section.workhard{
+		.col-md-12 {
+			> div{
+				a.prev{
+					top:auto !important;
+					bottom:-40px !important;
+					left:40% !important;
+					right:auto !important;
+				}
+				a.next{
+					top:auto !important;
+					bottom:-40px !important;
+					right:40% !important;
+					left:auto !important;
+				}
+			}		
+		}
+	}
+
+	section.team{
+		.slickSlider{
+			>i:first-child{
+				top:auto !important;
+				bottom:-40px !important;
+				left:40% !important;
+				right:auto !important;
+			}
+			>i:last-child{
+				top:auto !important;
+				bottom:-40px !important;
+				left:auto !important;
+				right:40% !important;
+			}
+		}
+	}
+
+	section.testimonials{
+		.slickSliderTestimonials{
+			>i:first-child{
+				top:auto !important;
+				bottom:-40px !important;
+				left:40% !important;
+				right:auto !important;
+			}
+			>i:last-child{
+				top:auto !important;
+				bottom:-40px !important;
+				left:auto !important;
+				right:40% !important;
+			}
+		}
+	}  
+}
+ 

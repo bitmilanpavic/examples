@@ -1,0 +1,25 @@
+@media screen and (max-width:1199px){
+	section.top{
+		height:100%;
+		h1{
+			position: static;
+			margin:300px auto;
+			text-align: center;
+			transform:translate(0%);
+		}
+	}
+	section.services{
+		.col-md-6{
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+			img{
+				max-width:100%;	
+			}
+		}
+	}
+	section.crew{
+		.hoverContainer{
+			top:20%;
+		}
+	} 
+}

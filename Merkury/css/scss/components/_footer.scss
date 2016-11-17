@@ -1,0 +1,28 @@
+footer{
+	background:$blue-dark;
+	color:$blue-light;
+	padding:47px 0px 31px 0px;
+	margin-bottom: -1px;
+	a{
+		color:$blue-light;
+		&:hover{
+			color:$white;
+		}
+	}
+	ul{
+		padding-left: 0;
+		list-style: none;
+		li{
+			float: left;
+			margin-right: 40px;
+			a{
+				color:$blue-light;
+			}
+		}
+	}
+	div.social{
+		a{
+			margin-right: 10px;
+		}
+	}
+}
